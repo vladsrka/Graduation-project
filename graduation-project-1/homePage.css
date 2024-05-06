@@ -1,3 +1,10 @@
-.buyer-informaition {
+.promo-banner {
     background: #D4E9F9;
 }
+.container {
+    max-height: 50px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }

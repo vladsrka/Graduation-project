@@ -30,7 +30,7 @@
 
 .header-top {
     background: #F7EBE5;
-    max-height: 48px;
+    height: 48px;
 }
 .header-top .container {
     max-width: 1200px;
@@ -42,6 +42,7 @@
 }
 .menu {
     display: flex;
+    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -50,5 +51,5 @@
     text-decoration: none;
     color: black;
     font-size: 14px;
-    padding: 14px 7px 12px 7px;
+    margin: 14px 7px 12px 7px;
 }

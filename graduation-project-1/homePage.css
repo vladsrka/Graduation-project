@@ -6,21 +6,57 @@ body {
     font-size: 15px;
     text-align: center;
 }
-.slider-lines {
+/* .swiper-container {
     width: 1880px;
+}
+.swiper-wrapper {
     max-height: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     position: relative;
 }
-.slider-line {
+.swiper-slide {
     width: 470px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+.promo-img {
+    padding: 0 10px;
+} */
+
+.container {
+    max-width: 1900px;
+    max-height: 50px;
+    margin: 0 auto;
+}
+.slider {
+    width: 470px;
+    max-height: 50px;
+    margin: 0 auto;
+    overflow: visible;
+}
+.slider-lines {
+    display: flex;
+    width: 1880px;
+    max-height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0;
+}
+.slider-line {
+    width: 470px;
+    max-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 .promo-img {
     padding: 0 10px;

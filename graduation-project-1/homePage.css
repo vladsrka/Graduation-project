@@ -1,10 +1,29 @@
+body {
+    box-sizing: border-box;
+}
 .promo-banner {
     background: #D4E9F9;
+    font-size: 15px;
+    text-align: center;
 }
-.container {
+.slider-lines {
+    width: 300px;
     max-height: 50px;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.slider-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.promo-img {
+    padding: 0 10px;
+}
+p {
+    padding: 15px 0;
+}

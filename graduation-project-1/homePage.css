@@ -6,49 +6,18 @@ body {
     font-size: 15px;
     text-align: center;
 }
-/* .swiper-container {
-    width: 1880px;
-}
-.swiper-wrapper {
-    max-height: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.swiper-slide {
-    width: 470px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.promo-img {
-    padding: 0 10px;
-} */
-
 .container {
     max-height: 50px;
     margin: 0 auto;
 }
-.slider {
-    width: 480px;
+.slider-lines {
+    width: 490px;
     max-height: 50px;
     margin: 0 auto;
     overflow: hidden;
 }
-.slider-lines {
-    display: flex;
-    max-height: 50px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 0;
-}
 .slider-line {
-    width: 480px;
+    width: 490px;
     max-height: 50px;
     display: flex;
     flex-direction: row;

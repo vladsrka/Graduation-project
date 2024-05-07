@@ -1,4 +1,4 @@
-body {
+* {
     box-sizing: border-box;
 }
 .promo-banner {
@@ -6,15 +6,13 @@ body {
     font-size: 15px;
     text-align: center;
 }
-.container {
+.promo-banner .container {
     max-height: 50px;
-    margin: 0 auto;
 }
 .slider-lines {
     width: 490px;
     max-height: 50px;
     margin: 0 auto;
-    overflow: hidden;
 }
 .slider-line {
     width: 490px;

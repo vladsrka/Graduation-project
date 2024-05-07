@@ -7,7 +7,7 @@ body {
     text-align: center;
 }
 .slider-lines {
-    width: 300px;
+    width: 1880px;
     max-height: 50px;
     display: flex;
     flex-direction: row;
@@ -16,6 +16,7 @@ body {
     position: relative;
 }
 .slider-line {
+    width: 470px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -23,7 +24,4 @@ body {
 }
 .promo-img {
     padding: 0 10px;
-}
-p {
-    padding: 15px 0;
 }

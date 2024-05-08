@@ -9,6 +9,7 @@
     src: url(./fonts/Montserrat/static/Montserrat-SemiBold.ttf);
 }
 * {
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -16,6 +17,7 @@
 body {
     font-family: Proxima-Nova;
     font-size: 14px;
+    color: black;
 }
 
 
@@ -69,9 +71,25 @@ body {
     font-size: 14px;
     padding: 14px 7px 12px 7px;
     font-weight: 400;
-    line-height: 1;
+    /* line-height: 1;
     border-bottom: 2px solid transparent;
-    transition: 0.2s;
+    transition: 0.2s; */
+}
+.sale a {
+    display: flex;
+}
+.sale a:after {
+    content: "%";
+    width: 1.75em;
+    height: 1.75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E7426A;
+    color: #fff;
+    margin-left: 5px;
+    border-radius: 100%;
+    margin-top: -7px;
 }
 
 .connect-top {
@@ -110,6 +128,38 @@ body {
 }
 
 
+.header-bottom {
+    padding: 18px 0;
+}
+.header-bottom .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-menu {
+    position: absolute;
+    margin-left: 0;
+    background: #FFFFFF;
+    border: 1px solid #EDEDF0;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    list-style-type: none;
+    min-width: 271px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 999999;
+}
+
+.menu-bottom-list:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-left-container li {
+    margin-right: 25px;
+}
 
 @media (max-width: 992px) {
     .header-top {

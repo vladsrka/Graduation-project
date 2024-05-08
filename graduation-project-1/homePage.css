@@ -108,3 +108,11 @@ body {
     justify-content: center;
     padding: 5px 9px 5px;
 }
+
+
+
+@media (max-width: 992px) {
+    .header-top {
+        display: none;
+    }
+}

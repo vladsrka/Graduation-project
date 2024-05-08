@@ -48,7 +48,7 @@ body {
 }
 .header-top .container {
     max-width: 1200px;
-    max-height: 48px;
+    max-height: 42px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -77,13 +77,22 @@ body {
     margin-left: 30px;
     max-width: 580px;
 }
+.connect-top p {
+    display: inline-block;
+    padding: 0 5px;
+}
+.connect-top a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
 .location {
     position: relative;
     display: flex;
     align-items: center;
 }
 .location p {
-    display: inline-block;
     padding: 0 5px;
 }
 .contact-links {
@@ -94,9 +103,6 @@ body {
     max-width: 100%;
 }
 .contact-links a {
-    display: flex;
-    align-items: center;
     justify-content: center;
     padding: 5px 9px 5px;
-    text-decoration: none;
 }

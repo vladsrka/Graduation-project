@@ -1,6 +1,22 @@
+@font-face {
+    font-family: 'Proxima-Nova';
+    font-weight: 400;
+    src: url(./fonts/Proxima-Nova/proximanova_regular.ttf);
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    src: url(./fonts/Montserrat/static/Montserrat-SemiBold.ttf);
+}
 * {
     box-sizing: border-box;
 }
+
+body {
+    font-family: Proxima-Nova;
+    font-size: 14px;
+}
+
 .promo-banner {
     background: #D4E9F9;
     font-size: 15px;
@@ -27,7 +43,6 @@
     padding: 0 10px;
 }
 
-
 .header-top {
     background: #F7EBE5;
 }
@@ -53,4 +68,35 @@
     line-height: 1;
     border-bottom: 2px solid transparent;
     transition: 0.2s;
+}
+.connect-top {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+    max-width: 580px;
+}
+.location {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.location p {
+    display: inline-block;
+    padding: 0 5px;
+}
+.contact-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    max-width: 100%;
+}
+.contact-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 9px 5px;
+    text-decoration: none;
 }

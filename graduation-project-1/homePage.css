@@ -185,7 +185,8 @@ body {
 
 @media (max-width: 992px) {
     .header-top, 
-    .header-bottom {
+    .header-bottom,
+    .promo-banner {
         display: none;
     }
 }

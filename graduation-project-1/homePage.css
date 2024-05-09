@@ -61,7 +61,6 @@ body {
     background: #F7EBE5;
 }
 .header-top .container {
-    max-height: 42px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -238,14 +237,23 @@ body {
     .container {
         max-width: 960px;
     }
+    .header-top .container {
+        max-height: 42px;
+    }
 }
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
     }
+    .header-top .container {
+        max-height: 42px;
+    }
 }
 @media (min-width: 1400px) {
     .container {
         max-width: 1200px;
+    }
+    .header-top .container {
+        max-height: 42px;
     }
 }

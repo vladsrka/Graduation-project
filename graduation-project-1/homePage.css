@@ -27,6 +27,13 @@ body {
     font-size: 15px;
     text-align: center;
 }
+.container {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
 .promo-banner .container {
     max-height: 50px;
     margin: 0 auto;
@@ -54,7 +61,6 @@ body {
     background: #F7EBE5;
 }
 .header-top .container {
-    max-width: 1200px;
     max-height: 42px;
     margin: 0 auto;
     display: flex;
@@ -170,6 +176,9 @@ body {
 .menu-right-container li {
     margin-left: 25px;
 }
+.sub-menu li {
+    margin: 0;
+}
 
 
 
@@ -178,5 +187,44 @@ body {
     .header-top, 
     .header-bottom {
         display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .contact-links {
+        display: none;
+    }
+    .logo-1 {
+        width: 100px;
+    }
+}
+@media (max-width: 1400px) {
+    .basket p {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 620px;
+    }
+}
+@media (min-width: 786px) {
+    .container {
+        max-width: 840px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
     }
 }

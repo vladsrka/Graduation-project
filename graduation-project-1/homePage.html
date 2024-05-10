@@ -84,9 +84,10 @@
                     </div>
                 </nav>
                 <div class="mobile-bottom">
-                    <a href="#">
+                    <a href="#" onclick="addStateOpenClass()">
                         <img src="./images/mobile-menu.svg">
                     </a>
+
                 </div>
                 <div class="mobile-bottom">
                     <a href="./homePage.html">
@@ -115,25 +116,28 @@
                                 </a>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a href="#">ВСЕ НАБОРЫ</a>
+                                        <a href="#" onclick="changeText(this, 'Ещё в разработке.')">ВСЕ НАБОРЫ</a>
                                     </li>
                                     <li>
-                                        <a href="#">ДЕНЬ РОЖДЕНИЯ</a>
+                                        <a href="#" onclick="changeText(this, 'Ещё в разработке.')">ДЕНЬ РОЖДЕНИЯ</a>
                                     </li>
                                     <li>
-                                        <a href="#">ПАСХА</a>
+                                        <a href="#" onclick="changeText(this, 'Ещё в разработке.')">ПАСХА</a>
                                     </li>
                                     <li>
-                                        <a href="#">МАКАРОНС КЛАССИЧЕСКИЕ</a>
+                                        <a href="#" onclick="changeText(this, 'Ещё в разработке.')">МАКАРОНС
+                                            КЛАССИЧЕСКИЕ</a>
                                     </li>
                                     <li>
-                                        <a href="#">СВАДЕБНЫЕ ПРЕДЛОЖЕНИЯ</a>
+                                        <a href="#" onclick="changeText(this, 'Ещё в разработке.')">СВАДЕБНЫЕ
+                                            ПРЕДЛОЖЕНИЯ</a>
                                     </li>
                                     <li>
-                                        <a href="#">КЕНДИ-БАРЫ</a>
+                                        <a href="#" onclick="changeText(this, 'Ещё в разработке.')">КЕНДИ-БАРЫ</a>
                                     </li>
                                     <li>
-                                        <a href="#">ДЕТСКИЕ ПРАЗДНИКИ</a>
+                                        <a href="#" onclick="changeText(this, 'Ещё в разработке.')">ДЕТСКИЕ
+                                            ПРАЗДНИКИ</a>
                                     </li>
                                 </ul>
                             </li>
@@ -161,13 +165,14 @@
                                 </a>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a href="#">ОПТОВЫЕ ПОСТАВКИ</a>
+                                        <a href="#" onclick="changeText(this, 'Ещё в разработке.')">ОПТОВЫЕ ПОСТАВКИ</a>
                                     </li>
                                     <li>
-                                        <a href="#">КОРПОРАТИВНЫЕ ПОДАРКИ</a>
+                                        <a href="#" onclick="changeText(this, 'Ещё в разработке.')">КОРПОРАТИВНЫЕ
+                                            ПОДАРКИ</a>
                                     </li>
                                     <li>
-                                        <a href="#">ЭКЛЕРЫ ОПТОМ</a>
+                                        <a href="#" onclick="changeText(this, 'Ещё в разработке.')">ЭКЛЕРЫ ОПТОМ</a>
                                     </li>
                                 </ul>
                             </li>
@@ -178,28 +183,30 @@
                                 </a>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a href="#">МАКАРОНС</a>
+                                        <a href="#" onclick="changeText(this, 'Ещё в разработке.')">МАКАРОНС</a>
                                     </li>
                                     <li>
-                                        <a href="#">ЭКЛЕРЫ</a>
+                                        <a href="#" onclick="changeText(this, 'Ещё в разработке.')">ЭКЛЕРЫ</a>
                                     </li>
                                     <li>
-                                        <a href="#">ПОДАРОЧНЫЕ НАБОРЫ</a>
+                                        <a href="#" onclick="changeText(this, 'Ещё в разработке.')">ПОДАРОЧНЫЕ
+                                            НАБОРЫ</a>
                                     </li>
                                     <li>
-                                        <a href="#">ВАФЕЛЬНЫЕ ТРУБОЧКИ</a>
+                                        <a href="#" onclick="changeText(this, 'Ещё в разработке.')">ВАФЕЛЬНЫЕ
+                                            ТРУБОЧКИ</a>
                                     </li>
                                     <li>
-                                        <a href="#">ЗЕФИР</a>
+                                        <a href="#" onclick="changeText(this, 'Ещё в разработке.')">ЗЕФИР</a>
                                     </li>
                                     <li>
-                                        <a href="#">КЕЙК-ПОПСЫ</a>
+                                        <a href="#" onclick="changeText(this, 'Ещё в разработке.')">КЕЙК-ПОПСЫ</a>
                                     </li>
                                     <li>
-                                        <a href="#">ДЕСЕРТ КАРТОШКА</a>
+                                        <a href="#" onclick="changeText(this, 'Ещё в разработке.')">ДЕСЕРТ КАРТОШКА</a>
                                     </li>
                                     <li>
-                                        <a href="#">КОМБО-НАБОРЫ</a>
+                                        <a href="#" onclick="changeText(this, 'Ещё в разработке.')">КОМБО-НАБОРЫ</a>
                                     </li>
                                 </ul>
                             </li>
@@ -210,7 +217,53 @@
         </section>
         <section class="header-mobile">
             <div class="container">
-                
+                <div class="close-menu-button" onclick="removeStateOpenClass()">
+                    <img src="./images/close-menu-button.svg">
+                </div>
+                <div class="location">
+                    <img src="./images/location.svg">
+                    <p>Гомель</p>
+                    <img src="./images/Vector.svg">
+                </div>
+                <div class="header-mobile-menu1">
+                    <ul  class="menu-bordered">
+                        <li class="sale">
+                            <a href="#">СЛАДКИЕ ДНИ</a>
+                        </li>
+                        <li class="menu-bottom-list">
+                            <a href="#">
+                                ПОДАРОЧНЫЕ НАБОРЫ
+                                <img src="./images/Vector.svg">
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#" onclick="changeText(this, 'Ещё в разработке.')">ВСЕ НАБОРЫ</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="changeText(this, 'Ещё в разработке.')">ДЕНЬ РОЖДЕНИЯ</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="changeText(this, 'Ещё в разработке.')">МАКАРОНС
+                                        КЛАССИЧЕСКИЕ</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="changeText(this, 'Ещё в разработке.')">СВАДЕБНЫЕ
+                                        ПРЕДЛОЖЕНИЯ</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="changeText(this, 'Ещё в разработке.')">КЕНДИ-БАРЫ</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="changeText(this, 'Ещё в разработке.')">ДЕТСКИЕ
+                                        ПРАЗДНИКИ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">СОБРАТЬ НАБОР</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </header>

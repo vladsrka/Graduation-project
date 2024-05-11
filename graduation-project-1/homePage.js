@@ -40,3 +40,19 @@ function removeStateOpenClass() {
   headerMobile.classList.remove('state-open');
 }
 
+
+
+function addOpenClassToSubMenu(event) {
+  const clickedMenu = event.currentTarget;
+  const subMenu = clickedMenu.querySelector('.sub-menu');
+
+  if (subMenu) {
+    subMenu.classList.toggle('open');
+  }
+}
+const menuBottomLists = document.querySelectorAll('.menu-bottom-list');
+menuBottomLists.forEach(menuBottomList => {
+  menuBottomList.addEventListener('click', addOpenClassToSubMenu);
+});
+
+

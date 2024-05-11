@@ -224,8 +224,8 @@ a {
 }
 
 @media screen and (max-width: 992px) {
-    .menu-top, 
-    .connect-top,
+    .header-top .menu-top, 
+    .header-top .connect-top,
     .header-bottom,
     .promo-banner {
         display: none;
@@ -250,7 +250,8 @@ a {
     }
     .header-mobile ul {
         list-style-type: none;
-        padding: 0 !important;
+        padding: 0 ;
+        margin: 0;
     }
     .header-mobile .menu-bordered li {
         border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -293,8 +294,20 @@ a {
     .menu-bottom-list {
         cursor: pointer;
     }
-    .sub-menu.open{
+    .menu-bordered .sub-menu.open{
         max-height: 85vh;
+    }
+    .header-mobile-menu2 .menu-bordered {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .header-mobile .menu-small {
+        text-align: center;
+        margin-top: 13px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .header-mobile .menu-small li {
+        padding: 7px;
     }
 }
 

@@ -309,15 +309,26 @@ a {
     .header-mobile .menu-small li {
         padding: 7px;
     }
-    .header-mobile .contact-phone img {
-        width: 15px;
-        height: 15px;
-    }
     .header-mobile .site-phone {
         display: flex;
         margin-top: 15px;
         justify-content: center;
-        line-height: 0;
+        align-items: center;
+        font-size: 15px;
+    }
+    .header-mobile .contact-phone img {
+        width: 15px;
+        height: 15px;
+    }
+    .header-mobile .site-phone p {
+        line-height: 1;
+        margin: 0;
+    }
+    .header-mobile .contact-links {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        max-height: 27px;
     }
 }
 

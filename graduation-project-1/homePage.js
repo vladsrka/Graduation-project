@@ -42,17 +42,28 @@ function removeStateOpenClass() {
 
 
 
-function addOpenClassToSubMenu(event) {
-  const clickedMenu = event.currentTarget;
-  const subMenu = clickedMenu.querySelector('.sub-menu');
+// function addOpenClassToSubMenu(event) {
+//   const clickedMenu = event.currentTarget;
+//   const subMenu = clickedMenu.querySelector('.sub-menu');
+
+//   if (subMenu) {
+//     subMenu.classList.toggle('open');
+//   }
+// }
+// const menuBottomLists = document.querySelectorAll('.menu-bottom-list');
+// menuBottomLists.forEach(menuBottomList => {
+//   menuBottomList.addEventListener('click', addOpenClassToSubMenu);
+// });
+
+function addOpenClassToParentSubMenu(event) {
+  const clickedLink = event.currentTarget;
+  const subMenu = clickedLink.closest('.sub-menu');
 
   if (subMenu) {
-    subMenu.classList.toggle('open');
+      subMenu.classList.toggle('open');
   }
 }
-const menuBottomLists = document.querySelectorAll('.menu-bottom-list');
-menuBottomLists.forEach(menuBottomList => {
-  menuBottomList.addEventListener('click', addOpenClassToSubMenu);
+const bottomLists = document.querySelectorAll('.bottom-list');
+bottomLists.forEach(bottomList => {
+  bottomList.addEventListener('click', addOpenClassToParentSubMenu);
 });
-
-

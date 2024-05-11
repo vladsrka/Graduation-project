@@ -42,28 +42,30 @@ function removeStateOpenClass() {
 
 
 
-// function addOpenClassToSubMenu(event) {
-//   const clickedMenu = event.currentTarget;
-//   const subMenu = clickedMenu.querySelector('.sub-menu');
-
-//   if (subMenu) {
-//     subMenu.classList.toggle('open');
-//   }
-// }
-// const menuBottomLists = document.querySelectorAll('.menu-bottom-list');
-// menuBottomLists.forEach(menuBottomList => {
-//   menuBottomList.addEventListener('click', addOpenClassToSubMenu);
-// });
-
-function addOpenClassToParentSubMenu(event) {
-  const clickedLink = event.currentTarget;
-  const subMenu = clickedLink.closest('.sub-menu');
-
-  if (subMenu) {
-      subMenu.classList.toggle('open');
+function toggleSubMenu(event) {
+  event.preventDefault();
+  // Получаем родителя текущего элемента (li.menu-bottom-list)
+  let parentElement = event.currentTarget.closest('.menu-bottom-list');
+  // Получаем элемент sub-menu внутри родителя
+  let subMenu = parentElement.querySelector('.sub-menu');
+  // Проверяем, есть ли у sub-menu класс open
+  if (subMenu.classList.contains('open')) {
+    // Если уже открыто, то закрываем только текущее sub-menu
+    subMenu.classList.remove('open');
+  } else {
+    // Добавляем класс open только к текущему sub-menu
+    subMenu.classList.add('open');
   }
 }
-const bottomLists = document.querySelectorAll('.bottom-list');
-bottomLists.forEach(bottomList => {
-  bottomList.addEventListener('click', addOpenClassToParentSubMenu);
+// Находим все ссылки с классом bottom-list и навешиваем на них событие click
+document.querySelectorAll('.bottom-list').forEach(element => {
+  element.addEventListener('click', toggleSubMenu);
+});
+// Добавляем обработчик события click на документ, чтобы закрывать sub-menu при клике вне области sub-menu
+document.addEventListener('click', function (event) {
+  if (!event.target.closest('.menu-bottom-list')) {
+    document.querySelectorAll('.sub-menu').forEach(element => {
+      element.classList.remove('open');
+    });
+  }
 });

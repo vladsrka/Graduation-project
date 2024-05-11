@@ -228,10 +228,24 @@ a {
 
 
 
+footer {
+    background: #EBEDEE;
+    padding: 60px 0 70px;
+    position: relative;
+}
 
 
 
 @media screen and (max-width: 992px) {
+    header {
+        position: sticky;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 4;
+        box-shadow: 1px 1px 15px #ddd;
+    }
     .header-top .menu-top, 
     .header-top .connect-top,
     .header-bottom,

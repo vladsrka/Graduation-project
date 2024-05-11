@@ -24,6 +24,10 @@ a {
     text-decoration: none;
     transition: .2s;
 }
+a:visited {
+    opacity: .8;
+}
+
 
 .promo-banner {
     background: #D4E9F9;
@@ -228,12 +232,76 @@ a {
 
 
 
+h6, .h6, .cart-name a, h5, .h5, h4, .h4, .footer-phone, h3, .h3, h2, .h2, h1, .h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+}
+
+
+
+
+
+
 footer {
     background: #EBEDEE;
     padding: 60px 0 70px;
     position: relative;
 }
-
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.footer-columns {
+    flex: 0 0 auto;
+    width: 25%;
+}
+.footer-widget {
+    max-width: 170px;
+}
+.footer-widget h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1.1em;
+    font-size: 16px;
+}
+.footer-widget a {
+    display: inline-block;
+    color: #292929;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding: 3px 3px 3px 0;
+}
+.footer-widget br {
+    height: 0;
+}
+.footer-last {
+    text-align: right;
+}
+.footer-phone {
+    font-size: 18px !important;
+    margin-bottom: 5px !important;
+}
+footer .contact-links {
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+footer .contact-links a {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 100%;
+    margin-left: 15px;
+    color: #292929;
+}
 
 
 @media screen and (max-width: 992px) {
@@ -399,6 +467,10 @@ footer {
     }
     .header-top .container {
         max-height: 42px;
+    }
+    .columns-edit {
+        flex: 0 0 auto;
+        width: 16.6666666667%;
     }
 }
 

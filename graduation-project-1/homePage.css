@@ -655,6 +655,9 @@ footer .contact-links a {
     h1 {
         font-size: 32px;
     }
+    h3 {
+        font-size: 16px;
+    }
     .banner {
         padding-top: 65px;
     }
@@ -670,6 +673,29 @@ footer .contact-links a {
     }
     .banner-title {
         margin-top: 40px;
+    }
+    .features .columns-mob-edit {
+        margin-bottom: 0;
+    }
+    .features-item {
+        padding: 0;
+    }
+    .features-bg {
+        display: none;
+    }
+    .features-icon, 
+    .features-snippet {
+        display: none;
+    }
+    .features-title {
+        display: flex;
+        text-align: left;
+        padding: 15px 0;
+        margin-top: 0;
+        border-bottom: 1px solid rgba(41, 41, 41, 0.16);
+    }
+    .features-title:after {
+        margin-left: auto;
     }
 }
 

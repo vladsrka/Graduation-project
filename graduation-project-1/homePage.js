@@ -72,20 +72,6 @@ document.addEventListener('click', function (event) {
 
 
 
-function addMaxWidthToParent() {
-  // Находим элементы с классом footer-phone
-  let footerPhones = document.querySelectorAll('.footer-phone');
-  // Проходим по каждому элементу
-  footerPhones.forEach(phone => {
-    // Находим ближайший родительский элемент с классом footer-widget
-    let footerWidget = phone.closest('.footer-widget');
-    // Если найден родительский элемент, добавляем стили
-    if (footerWidget) {
-      footerWidget.style.maxWidth = '178px';
-    }
-  });
-}
-addMaxWidthToParent();
 
 
 

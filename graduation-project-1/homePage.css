@@ -232,7 +232,7 @@ a:visited {
 
 
 
-h6, .h6, .cart-name a, h5, .h5, h4, .h4, .footer-phone, h3, .h3, h2, .h2, h1, .h1 {
+h6, .cart-name a, h5, h4, .footer-phone, h3, h2, h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     margin-bottom: 0.5em;
@@ -240,7 +240,11 @@ h6, .h6, .cart-name a, h5, .h5, h4, .h4, .footer-phone, h3, .h3, h2, .h2, h1, .h
 h1, h2, h3, h4, h5, h6 {
     clear: both;
 }
-
+h1 {
+    font-size: 42px;
+    font-size: 2em;
+    margin: 0.67em 0;
+}
 
 
 main {
@@ -282,6 +286,39 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.banner-since:after,
+.banner-since:before {
+    content: "";
+    display: block;
+    height: 1.5px;
+    width: 1.8em;
+    background: #292929;
+    margin: 0 10px;
+}
+[data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    transform: translateZ(0);
+}
+[data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+    transition-timing-function: ease;
+}
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+    transition-duration: .4s;
+}
+[data-aos^=fade][data-aos^=fade] {
+    opacity: 0;
+    transition-property: opacity, transform;
+}
+.banner-title {
+    margin: 24px 0 14px;
+}
+[data-aos=fade-up] {
+    transform: translate3d(0, 100px, 0);
+}
+.banner-snippet {
+    font-size: 18px;
+    font-family: "Proxima Nova", sans-serif;
 }
 
 
@@ -378,7 +415,9 @@ footer .contact-links a {
 
 @media screen and (max-width: 576px) {
 
-
+    h1 {
+        font-size: 28px !important;
+    }
 
     footer {
         padding: 33px 0 50px;
@@ -431,6 +470,9 @@ footer .contact-links a {
 
 
 @media screen and (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
     .banner {
         padding-top: 65px;
     }
@@ -443,6 +485,9 @@ footer .contact-links a {
     .banner-image {
         padding-right: 20px;
         margin-top: 20px;
+    }
+    .banner-title {
+        margin-top: 40px;
     }
 }
 
@@ -574,6 +619,12 @@ footer .contact-links a {
     }
     .banner-brand {
         font-size: 18px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    .banner-snippet {
+        font-size: 16px;
     }
 
 

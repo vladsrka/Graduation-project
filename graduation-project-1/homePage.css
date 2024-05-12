@@ -296,7 +296,7 @@ img {
     background: #292929;
     margin: 0 10px;
 }
-[data-aos^=fade][data-aos^=fade].aos-animate {
+/* [data-aos^=fade][data-aos^=fade].aos-animate {
     opacity: 1;
     transform: translateZ(0);
 }
@@ -309,13 +309,13 @@ img {
 [data-aos^=fade][data-aos^=fade] {
     opacity: 0;
     transition-property: opacity, transform;
-}
+} */
 .banner-title {
     margin: 24px 0 14px;
 }
-[data-aos=fade-up] {
+/* [data-aos=fade-up] {
     transform: translate3d(0, 100px, 0);
-}
+} */
 .banner-snippet {
     font-size: 18px;
     font-family: "Proxima Nova", sans-serif;

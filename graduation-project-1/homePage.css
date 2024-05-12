@@ -240,7 +240,11 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
 }
 
-
+main {
+    display: block;
+    background: #f7f7f7;
+    padding-bottom: 50px;
+}
 
 
 

@@ -440,7 +440,7 @@ footer .contact-links a {
         color: #292929;
     }
     .menu-bottom-list img{
-        padding-left: 5px;
+        margin-left: 5px;
     }
     .menu-bordered .sub-menu {
         position: static;

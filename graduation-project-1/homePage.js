@@ -42,36 +42,81 @@ function removeStateOpenClass() {
 
 
 
+// function toggleSubMenu(event) {
+//   event.preventDefault();
+//   // Получаем родителя текущего элемента (li.menu-bottom-list)
+//   let parentElement = event.currentTarget.closest('.menu-bottom-list');
+//   // Получаем элемент sub-menu внутри родителя
+//   let subMenu = parentElement.querySelector('.sub-menu');
+//   // Проверяем, есть ли у sub-menu класс open
+//   if (subMenu.classList.contains('open')) {
+//     // Если уже открыто, то закрываем только текущее sub-menu
+//     subMenu.classList.remove('open');
+//   } else {
+//     // Добавляем класс open только к текущему sub-menu
+//     subMenu.classList.add('open');
+//   }
+// }
+// // Находим все ссылки с классом bottom-list и навешиваем на них событие click
+// document.querySelectorAll('.bottom-list').forEach(element => {
+//   element.addEventListener('click', toggleSubMenu);
+// });
+// // Добавляем обработчик события click на документ, чтобы закрывать sub-menu при клике вне области sub-menu
+// document.addEventListener('click', function (event) {
+//   if (!event.target.closest('.menu-bottom-list')) {
+//     document.querySelectorAll('.sub-menu').forEach(element => {
+//       element.classList.remove('open');
+//     });
+//   }
+// });
+
+
+
 function toggleSubMenu(event) {
   event.preventDefault();
-  // Получаем родителя текущего элемента (li.menu-bottom-list)
   let parentElement = event.currentTarget.closest('.menu-bottom-list');
-  // Получаем элемент sub-menu внутри родителя
   let subMenu = parentElement.querySelector('.sub-menu');
-  // Проверяем, есть ли у sub-menu класс open
+
   if (subMenu.classList.contains('open')) {
-    // Если уже открыто, то закрываем только текущее sub-menu
     subMenu.classList.remove('open');
   } else {
-    // Добавляем класс open только к текущему sub-menu
     subMenu.classList.add('open');
   }
+
+  // Находим ближайшее изображение к родительскому элементу
+  let image = parentElement.querySelector('img');
+
+  if (image) {
+    if (image.classList.contains('rotated')) {
+      // Убираем класс rotated, чтобы можно было снова повернуть вниз
+      image.style.transition = 'transform 0.3s';
+      image.style.transform = 'rotate(0deg)';
+      setTimeout(() => {
+        image.classList.remove('rotated');
+      }, 500);
+    } else {
+      // Добавляем класс rotated, чтобы запомнить, что изображение повернуто
+      image.style.transition = 'transform 0.3s';
+      image.style.transform = 'rotate(180deg)';
+      image.classList.add('rotated');
+    }
+  }
 }
-// Находим все ссылки с классом bottom-list и навешиваем на них событие click
+
 document.querySelectorAll('.bottom-list').forEach(element => {
   element.addEventListener('click', toggleSubMenu);
 });
-// Добавляем обработчик события click на документ, чтобы закрывать sub-menu при клике вне области sub-menu
+
 document.addEventListener('click', function (event) {
   if (!event.target.closest('.menu-bottom-list')) {
     document.querySelectorAll('.sub-menu').forEach(element => {
       element.classList.remove('open');
     });
+
+    document.querySelectorAll('.menu-bottom-list img').forEach(image => {
+      image.style.transition = 'none'; // Сбрасываем анимацию при закрытии
+    });
   }
 });
-
-
-
-
 
 

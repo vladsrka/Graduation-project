@@ -246,7 +246,12 @@ main {
     background: #f7f7f7;
     padding-bottom: 50px;
 }
-
+.banner {
+    background-image: url(/graduation-project-1/images/bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+}
 
 
 footer {

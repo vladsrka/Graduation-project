@@ -581,6 +581,9 @@ footer .contact-links a {
     .header-top .container {
         max-height: 42px;
     }
+    .contact-phone p {
+        font-size: 14px;
+    }
     .header-mobile {
         display: none;
     }

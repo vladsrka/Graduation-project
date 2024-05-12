@@ -664,6 +664,9 @@ footer .contact-links a {
     .banner-row {
         flex-direction: column-reverse;
     }
+    .features .banner-row {
+        flex-direction: column;
+    }
     .banner-column {
         flex: 1;
     }

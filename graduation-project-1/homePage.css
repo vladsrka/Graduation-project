@@ -245,6 +245,9 @@ h1 {
     font-size: 2em;
     margin: 0.67em 0;
 }
+h3 {
+    font-size: 20px;
+}
 
 
 
@@ -263,6 +266,10 @@ main {
 .banner-row {
     display: flex;
     align-items: center;
+}
+.features .banner-row {
+    align-items: normal;
+    flex-wrap: wrap;
 }
 .banner-column {
     flex: 0 0 49%;
@@ -305,7 +312,68 @@ img {
     font-size: 18px;
     font-family: "Proxima Nova", sans-serif;
 }
-columns-mob-edit
+
+
+.features .columns-mob-edit {
+    margin-bottom: 25px;
+}
+.features-item {
+    display: block;
+    padding: 35px 55px;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    color: #292929 !important;
+}
+.features-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+.features-bg svg {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.features-bg-1 {
+    transform: scale(-1, 1);
+}
+.features-bg-2 {
+    transform: scale(1, -1);
+}
+.features-bg-3 {
+    transform: scale(-1, -1);
+}
+.features-content {
+    position: relative;
+}
+.features-icon {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+.features-title {
+    margin-bottom: 11px;
+}
+.features-title:after {
+    content: url(./images/arrow.svg);
+    margin-left: 5px;
+}
+.features-snippet {
+    margin-bottom: 0;
+}
 
 
 
@@ -415,7 +483,9 @@ footer .contact-links a {
     .logo-1 {
         width: 100px;
     }
-
+    .features .columns-mob-edit {
+        padding: 0 12.5px;
+    }
 
 
     .footer-widget {
@@ -559,6 +629,9 @@ footer .contact-links a {
     h1 {
         font-size: 36px;
     }
+    h3 {
+        font-size: 18px;
+    }
     .banner-snippet {
         font-size: 16px;
     }
@@ -604,7 +677,7 @@ footer .contact-links a {
 @media screen and (max-width: 576px) {
 
     h1 {
-        font-size: 28px !important;
+        font-size: 28px;
     }
 
     footer {
@@ -680,6 +753,10 @@ footer .contact-links a {
     .container {
         max-width: 840px;
     }
+    .columns-mb {
+        flex: 0 0 auto;
+        width: 50%;
+    }
 }
 
 
@@ -722,6 +799,9 @@ footer .contact-links a {
     }
     .columns-mob-edit {
         padding: 0 8px;
+    }
+    .features .columns-mob-edit {
+        padding: 0 12.5px;
     }
 }
 

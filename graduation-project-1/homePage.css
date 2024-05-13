@@ -268,8 +268,11 @@ main {
     align-items: center;
 }
 .features .banner-row {
+    box-sizing: border-box;
     align-items: normal;
     flex-wrap: wrap;
+    margin-right: calc(1.5rem / -2);
+    margin-left: calc(1.5rem / -2);
 }
 .banner-column {
     flex: 0 0 49%;
@@ -392,7 +395,7 @@ footer {
     width: 25%;
 }
 .footer-widget {
-    max-width: 177px;
+    max-width: 170px;
 }
 .footer-widget h3 {
     margin: 0;
@@ -825,6 +828,9 @@ footer .contact-links a {
     .columns-desk {
         flex: 0 0 auto;
         width: 33.3333333333%;
+    }
+    .footer-last .footer-widget {
+        max-width: 196px;
     }
     .columns-mob-edit {
         padding: 0 8px;

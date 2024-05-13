@@ -391,6 +391,48 @@ img {
     text-align: center;
     margin-bottom: 50px;
 }
+.promotions-slider {
+    padding-bottom: 50px;
+}
+.promotions-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.promotions-image {
+    max-height: 360px;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+.promotions-image img {
+    vertical-align: bottom;
+}
+.promotions-name {
+    margin-bottom: 8px;
+}
+.promotions-snippet {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: #EE5D7C;
+}
+.swiper-pagination-bullet {
+    border-radius: 0;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    background: #e7426a;
+    border-color: #e7426a;
+}
+
+
 
 
 
@@ -817,6 +859,9 @@ footer .contact-links a {
     }
     .header-mobile {
         display: none;
+    }
+    .promotions-item {
+        padding-bottom: 15px;
     }
 }
 

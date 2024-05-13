@@ -66,6 +66,7 @@ a:visited {
 }
 
 
+
 .header-top {
     background: #F7EBE5;
 }
@@ -186,7 +187,6 @@ a:visited {
 .menu-left-container li {
     margin-right: 25px;
 }
-
 .menu-right-container li {
     margin-left: 25px;
 }
@@ -233,7 +233,6 @@ a:visited {
 
 
 
-
 h6, .cart-name a, h5, h4, .footer-phone, h3, h2, h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
@@ -253,7 +252,6 @@ h2 {
 h3 {
     font-size: 20px;
 }
-
 
 
 
@@ -431,6 +429,62 @@ img {
     background: #e7426a;
     border-color: #e7426a;
 }
+
+
+.holidays {
+    margin-top: 90px;
+}
+.holidays-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+.holidays-calendar {
+    position: relative;
+}
+.holidays-calendar:before {
+    content: "";
+    width: 100%;
+    height: 0;
+    display: block;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    border-bottom: 2px dashed #d2d2d2;
+}
+.holidays-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(1.5rem / -2);
+    margin-left: calc(1.5rem / -2);
+}
+.holidays-item {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    color: #292929;
+    display: block;
+    transition: 0.2s;
+}
+.holidays-icon {
+    height: 72px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.holidays-icon img {
+    max-height: 100%;
+    position: relative;
+    z-index: 2;
+}
+.holidays-birthday img {
+    transform: scale(1.75) translate(15%, -20%);
+}
+.holidays span {
+    display: block;
+}
+
 
 
 
@@ -843,6 +897,10 @@ footer .contact-links a {
     .columns-mb {
         flex: 0 0 auto;
         width: 50%;
+    }
+    .columns-mh {
+        flex: 0 0 auto;
+        width: 16.6666666667%;
     }
 }
 

@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
 }
 h1 {
-    font-size: 42px;
+    font-size: 42px !important; 
     font-size: 2em;
     margin: 0.67em 0;
 }
@@ -630,7 +630,7 @@ footer .contact-links a {
         font-size: 18px;
     }
     h1 {
-        font-size: 36px;
+        font-size: 36px !important;
     }
     h3 {
         font-size: 18px;
@@ -656,7 +656,7 @@ footer .contact-links a {
 
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 32px;
+        font-size: 32px !important;
     }
     h3 {
         font-size: 16px;
@@ -709,7 +709,7 @@ footer .contact-links a {
 @media screen and (max-width: 576px) {
 
     h1 {
-        font-size: 28px;
+        font-size: 28px !important;
     }
 
     footer {
@@ -781,7 +781,7 @@ footer .contact-links a {
 }
 
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
     .container {
         max-width: 840px;
     }

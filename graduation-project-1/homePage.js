@@ -44,6 +44,19 @@ function changeTextP(link, newText) {
 
 
 
+function changeTextH(link, newText) {
+  var header = link.querySelector('h1, h2, h3, h4, h5, h6');
+  if (header.textContent === newText) {
+    header.textContent = header.getAttribute('data-default-text');
+  } else {
+    header.setAttribute('data-default-text', header.textContent);
+    header.textContent = newText;
+  }
+}
+// onclick="changeTextH(this, 'Ещё в разработке.')"
+
+
+
 function addStateOpenClass() {
   const headerMobile = document.querySelector('.header-mobile');
   headerMobile.classList.add('state-open');

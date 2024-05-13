@@ -8,6 +8,11 @@
     font-weight: 600;
     src: url(./fonts/Montserrat/static/Montserrat-SemiBold.ttf);
 }
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    src: url(./fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -460,6 +465,10 @@ img {
     margin-right: calc(1.5rem / -2);
     margin-left: calc(1.5rem / -2);
 }
+.holidays-row > * {
+    padding-right: calc(1.5rem / 2);
+    padding-left: calc(1.5rem / 2);
+}
 .holidays-item {
     text-align: center;
     font-size: 14px;
@@ -784,11 +793,23 @@ footer .contact-links a {
     h3 {
         font-size: 18px;
     }
+    h6 {
+        font-size: 12px;
+    }
     .banner-snippet {
         font-size: 16px;
     }
     .col-cell {
         margin-bottom: 25px;
+    }
+    .holidays {
+        margin-top: 50px;
+    }
+    .holidays-title {
+        margin-bottom: 30px;
+    }
+    .holidays-item {
+        font-size: 12px;
     }
 
 
@@ -857,6 +878,43 @@ footer .contact-links a {
     }
     .features-title:after {
         margin-left: auto;
+    }
+    .holidays {
+        margin-top: 40px;
+    }
+    .holidays-calendar:before {
+        width: 0;
+        height: calc(100% - 80px);
+        border-bottom: 0;
+        border-left: 2px dashed #D2D2D2;
+        left: 35px;
+    }
+    .holidays .columns-mob-edit:nth-of-type(3) ~ .columns-mob-edit {
+        display: none;
+    }
+    .holidays-item {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .holidays-icon {
+        display: block;
+        margin-bottom: 0;
+        max-width: 65px;
+        height: auto;
+    }
+    .holidays-birthday img {
+        transform: scale(1.5) translate(15%, -20%);
+    }
+    .holidays-text {
+        margin-left: 20px;
+    }
+    .holidays span {
+        display: block;
+    }
+    .holidays p {
+        margin-bottom: 0;
     }
 }
 

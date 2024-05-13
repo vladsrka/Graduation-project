@@ -31,6 +31,19 @@ function changeText(link, newText) {
 
 
 
+function changeTextP(link, newText) {
+  var paragraph = link.querySelector('p');
+  if (paragraph.textContent === newText) {
+    paragraph.textContent = paragraph.getAttribute('data-default-text');
+  } else {
+    paragraph.setAttribute('data-default-text', paragraph.textContent);
+    paragraph.textContent = newText;
+  }
+}
+// onclick="changeTextP(this, 'Ещё в разработке.')"
+
+
+
 function addStateOpenClass() {
   const headerMobile = document.querySelector('.header-mobile');
   headerMobile.classList.add('state-open');
@@ -123,30 +136,30 @@ document.addEventListener('click', function (event) {
 
 window.addEventListener('load', function (e) {
   var slider = new Swiper('.promotions-slider', {
-      pagination: {
-          el: '.swiper-pagination',
-          type: 'bullets',
-      },
-      watchOverflow: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    watchOverflow: true,
 
-      breakpoints: {
-          0: {
-              slidesPerView: 1,
-              spaceBetween: 10,
-          },
-          576: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-          },
-          768: {
-              slidesPerView: 3,
-              spaceBetween: 25,
-          },
-          1060: {
-              slidesPerView: 4,
-              spaceBetween: 30,
-          }
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 10,
       },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 25,
+      },
+      1060: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      }
+    },
   });
 });
 

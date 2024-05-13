@@ -488,6 +488,26 @@ img {
 
 
 
+.cards {
+    text-align: center;
+    margin-top: 20px;
+}
+.cards-title {
+    margin-bottom: 25px;
+}
+.cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: calc(1.5rem / -2);
+    margin-left: calc(1.5rem / -2);
+}
+.column-cards {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+
 
 
 footer {
@@ -902,6 +922,7 @@ footer .contact-links a {
         flex: 0 0 auto;
         width: 16.6666666667%;
     }
+    
 }
 
 

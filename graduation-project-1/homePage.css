@@ -817,6 +817,12 @@ footer .contact-links a {
     }
 
 
+    
+    .features .columns-mob-edit {
+        padding: 0 12.5px;
+    }
+
+
 
     .columns-edit {
         flex: 0 0 auto;
@@ -834,9 +840,6 @@ footer .contact-links a {
     }
     .columns-mob-edit {
         padding: 0 8px;
-    }
-    .features .columns-mob-edit {
-        padding: 0 12.5px;
     }
 }
 

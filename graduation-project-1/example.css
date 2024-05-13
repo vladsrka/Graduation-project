@@ -232,7 +232,7 @@ a:visited {
 
 
 
-h6, .h6, .cart-name a, h5, .h5, h4, .h4, .footer-phone, h3, .h3, h2, .h2, h1, .h1 {
+h6, .cart-name a, h5, h4, .footer-phone, h3, h2, h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     margin-bottom: 0.5em;
@@ -240,6 +240,16 @@ h6, .h6, .cart-name a, h5, .h5, h4, .h4, .footer-phone, h3, .h3, h2, .h2, h1, .h
 h1, h2, h3, h4, h5, h6 {
     clear: both;
 }
+h1 {
+    font-size: 42px !important; 
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+h3 {
+    font-size: 20px;
+}
+
+
 
 main {
     
@@ -261,7 +271,7 @@ footer {
     width: 25%;
 }
 .footer-widget {
-    max-width: 177px;
+    max-width: 170px;
 }
 .footer-widget h3 {
     margin: 0;
@@ -337,58 +347,32 @@ footer .contact-links a {
 }
 
 
-@media screen and (max-width: 576px) {
-
-
-
-    footer {
-        padding: 33px 0 50px;
-    }
-    footer .footer-columns {
+@media screen and (max-width: 1400px) {
+    .basket p {
         display: none;
     }
-    .footer-widget {
-        font-size: 12px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .contact-links {
+        display: none;
     }
-    footer .contact-links {
-        justify-content: center;
-        margin-top: 27px;
+    .logo-1 {
+        width: 100px;
+    }
+
+
+
+    .footer-widget {
+        max-width: unset;
     }
     .footer-features {
-        margin-top: 0;
-        padding: 0 25px;
-    }
-    .footer-features .columns-sm {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-        text-align: left;
-    }
-    .footer-features .columns-sm img {
-        flex: 0 0 40px;
-        margin-right: 20px;
-    }
-    .footer-features-image {
-        width: 70px;
-        text-align: center;
-    }
-    .footer-features span {
-        font-size: 12px;
-    }
-    .copyright {
-        font-size: 12px;
-    }
-    .footer-mobile {
-        display: block;
-    }
-    .footer-phone {
-        font-size: 12px !important;
-        padding-right: 0 !important;
-    }
-    .footer-mobile {
-        display: block;
+        max-width: unset;
+        margin-top: 20px;
     }
 }
+
 
 @media screen and (max-width: 992px) {
     body {
@@ -512,6 +496,15 @@ footer .contact-links a {
 
 
 
+    h1 {
+        font-size: 36px !important;
+    }
+    h3 {
+        font-size: 18px;
+    }
+
+
+
     .footer-widget h3 {
         font-size: 14px;
     }
@@ -525,31 +518,71 @@ footer .contact-links a {
 }
 
 
-@media screen and (max-width: 1200px) {
-    .contact-links {
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 32px !important;
+    }
+    h3 {
+        font-size: 16px;
+    }   
+}
+
+
+@media screen and (max-width: 576px) {
+
+    h1 {
+        font-size: 28px !important;
+    }
+
+    footer {
+        padding: 33px 0 50px;
+    }
+    footer .footer-columns {
         display: none;
     }
-    .logo-1 {
-        width: 100px;
-    }
-
-
-
     .footer-widget {
-        max-width: unset;
+        font-size: 12px;
+    }
+    footer .contact-links {
+        justify-content: center;
+        margin-top: 27px;
     }
     .footer-features {
-        max-width: unset;
-        margin-top: 20px;
+        margin-top: 0;
+        padding: 0 25px;
+    }
+    .footer-features .columns-sm {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .footer-features .columns-sm img {
+        flex: 0 0 40px;
+        margin-right: 20px;
+    }
+    .footer-features-image {
+        width: 70px;
+        text-align: center;
+    }
+    .footer-features span {
+        font-size: 12px;
+    }
+    .copyright {
+        font-size: 12px;
+    }
+    .footer-mobile {
+        display: block;
+    }
+    .footer-phone {
+        font-size: 12px !important;
+        padding-right: 0 !important;
+    }
+    .footer-mobile {
+        display: block;
     }
 }
 
-
-@media screen and (max-width: 1400px) {
-    .basket p {
-        display: none;
-    }
-}
 
 
 @media screen and (min-width: 576px) {
@@ -570,9 +603,13 @@ footer .contact-links a {
 }
 
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
     .container {
         max-width: 840px;
+    }
+    .columns-mb {
+        flex: 0 0 auto;
+        width: 50%;
     }
 }
 
@@ -613,6 +650,9 @@ footer .contact-links a {
     .columns-desk {
         flex: 0 0 auto;
         width: 33.3333333333%;
+    }
+    .footer-last .footer-widget {
+        max-width: 196px;
     }
     .columns-mob-edit {
         padding: 0 8px;

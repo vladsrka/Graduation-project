@@ -224,6 +224,9 @@ header a:hover {
 }
 
 
+.header-mobile li {
+    cursor: pointer;
+}
 .header-mobile {
     padding: 20px 0;
     position: fixed;
@@ -258,6 +261,9 @@ header a:hover {
     font-weight: 600;
     justify-content: center;
     max-height: 20px;
+}
+.menu-small a {
+    cursor: pointer;
 }
 
 

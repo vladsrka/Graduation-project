@@ -42,10 +42,12 @@ header a:hover {
 footer a:hover {
     border-color: #E7426A;
 }
-footer .contact-links a:hover {
-    color: #E7426A;
+:root {
+    --color-red: #e7426a;
 }
-
+footer .contact-links a:hover svg {
+    color: var(--color-red);
+}
 
 .promo-banner {
     background: #D4E9F9;

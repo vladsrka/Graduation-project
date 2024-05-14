@@ -465,6 +465,9 @@ img {
 }
 
 
+.holidays a {
+    cursor: pointer;
+}
 .holidays {
     margin-top: 90px;
 }
@@ -531,6 +534,9 @@ img {
 }
 
 
+.products a {
+    cursor: pointer;
+}
 .products {
     margin-top: 40px;
     position: relative;

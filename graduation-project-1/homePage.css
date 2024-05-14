@@ -659,9 +659,6 @@ body .card .add-to-cart-button:before {
 }
 
 
-
-
-
 .cards {
     text-align: center;
     margin-top: 60px;
@@ -1207,6 +1204,13 @@ footer .contact-links a {
     .cards-description b {
         font-size: 12px;
     }
+    .cards-row > * {
+        padding-right: calc(1.5rem / 3);
+        padding-left: calc(1.5rem / 3);
+    }
+    .cards-image {
+        margin-bottom: 8px;
+    }
 
     footer {
         padding: 33px 0 50px;
@@ -1254,13 +1258,6 @@ footer .contact-links a {
     }
     .footer-mobile {
         display: block;
-    }
-    .cards-row > * {
-        padding-right: calc(1.5rem / 3);
-        padding-left: calc(1.5rem / 3);
-    }
-    .cards-image {
-        margin-bottom: 8px;
     }
 }
 

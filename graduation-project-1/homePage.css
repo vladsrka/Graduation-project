@@ -13,6 +13,11 @@
     font-weight: 700;
     src: url(./fonts/Montserrat/static/Montserrat-Bold.ttf);
 }
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url(./fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -270,6 +275,9 @@ h2 {
 h3 {
     font-size: 20px;
 }
+h4, .footer-phone {
+    font-size: 18px;
+}
 h6, .cart-name a {
     font-size: 14px;
 }
@@ -509,9 +517,142 @@ img {
 .holidays span {
     display: block;
 }
+.holidays p {
+    margin-bottom: 1.5em;
+}
 .holidays-item:hover {
     color: #E7426A;
     transform: scale(1.05);
+}
+
+
+.products {
+    margin-top: 40px;
+    position: relative;
+}
+.products-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.products-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(1.5rem / -2);
+    margin-left: calc(1.5rem / -2);
+}
+.products-row > * {
+    padding-right: calc(1.5rem / 2);
+    padding-left: calc(1.5rem / 2);
+}
+body .card {
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ededf0;
+}
+body .card-image {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 80%;
+}
+body .card-image img {
+    transition: 0.2s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+body .card:hover img {
+    transform: translate(-50%, -50%) scale(1.05);
+}
+body .card-content {
+    padding: 20px;
+    display: block;
+    color: #292929;
+    border-bottom: 0;
+    border-top: 0;
+}
+body .card-shortdesc {
+    opacity: 0.8;
+    font-size: 14px;
+    margin-top: auto;
+}
+body .card-footer {
+    padding: 0 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ededf0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: auto;
+}
+del {
+    color: #969696;
+}
+del .amount {
+    display: block;
+    font-size: 0.85em;
+    color: #969696;
+}
+.amount {
+    color: #E7426A;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+ins {
+    background: transparent;
+    text-decoration: none;
+}
+body .card .add-to-cart-button{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    border-left: 1px solid #ededf0;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.88);
+    height: 19px;
+    box-sizing: content-box;
+    outline: 0;
+}
+body .card .add-to-cart-button:before {
+    content: url(./images/bag-main.svg);
+    margin-right: 10px;
+}
+.products-action {
+    text-align: center;
+}
+.btn-secondary {
+    min-width: 230px;
+    padding: 18px 15px;
+    color: #292929;
+    border: 1px solid #4e9dd3;
+    background: transparent;
+}
+.btn {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Montserrat", serif;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.2s;
+    border-radius: 3px;
+    box-sizing: border-box;
+    line-height: 1;
 }
 
 
@@ -520,7 +661,7 @@ img {
 
 .cards {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 .cards-title {
     margin-bottom: 25px;
@@ -820,8 +961,14 @@ footer .contact-links a {
     h3 {
         font-size: 18px;
     }
+    h4 {
+        font-size: 16px;
+    }
     h6 {
         font-size: 12px;
+    }
+    .amount {
+        font-size: 16px;
     }
     .banner-snippet {
         font-size: 16px;
@@ -837,6 +984,16 @@ footer .contact-links a {
     }
     .holidays-item {
         font-size: 12px;
+    }
+    .promotions {
+        margin-top: 40px;
+    }
+    .promotions-title {
+        margin-bottom: 25px;
+    }
+    .btn-secondary {
+        padding: 14px 35px 12px;
+        min-width: 200px;
     }
 
 
@@ -863,6 +1020,12 @@ footer .contact-links a {
     }
     h3 {
         font-size: 16px;
+    }
+    h4 {
+        font-size: 14px;
+    }
+    .amount {
+        font-size: 14px;
     }
     .banner {
         padding-top: 65px;
@@ -943,6 +1106,25 @@ footer .contact-links a {
     .holidays p {
         margin-bottom: 0;
     }
+    .products {
+        margin-top: 30px;
+    }
+    .promotions-item {
+        height: 460px;
+        padding: 50px 10px 20px;
+    }
+    .promotions-snippet {
+        height: 65px !important;
+    }
+    .columns-mob-edit:nth-of-type(3) .holidays-item {
+        margin-bottom: 0;
+    }
+    .products-title {
+        margin-bottom: 20px;
+    }
+    .products-action {
+        margin-top: 20px;
+    }
 }
 
 
@@ -950,6 +1132,77 @@ footer .contact-links a {
 
     h1 {
         font-size: 28px !important;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    h4 {
+        font-size: 12px;
+    }
+    .products .column-cards {
+        padding-right: 4px;
+        padding-left: 4px;
+        margin-bottom: 8px;
+    }
+    .col-cell {
+        margin-bottom: 15px;
+    }
+    body .card {
+        padding: 10px 10px 0;
+    }
+    body .card-content {
+        padding: 10px 0;
+    }
+    body .card-shortdesc {
+        font-size: 12px;
+    }
+    body .card-footer {
+        padding-left: 10px;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    body .card-add2cart .add-to-cart-button {
+        padding: 10px 15px;
+    }
+    body .card-add2cart .add-to-cart-button:not(.loading):not(.added):before {
+        transform: scale(0.85);
+    }
+    body .card-add2cart .add-to-cart-button:before {
+        margin-right: 0;
+    }
+    body .card-add2cart span {
+        display: none;
+    }
+    .products-action {
+        margin-top: 12px;
+    }
+    .promotions-snippet {
+        height: 43px !important;
+    }
+    .products-row {
+        margin-right: -4px;
+        margin-left: -4px;
+    }
+    .products-action {
+        margin-top: 12px;
+    }
+    .btn-secondary {
+        padding: 12px 11px;
+        min-width: 200px;
+    }
+    .btn {
+        font-size: 12px;
+    }
+    .cards-description {
+        font-size: 12px;
+        text-align: left;
+        font-weight: normal !important;
+    }
+    .cards-description b {
+        font-size: 12px;
     }
 
     footer {
@@ -998,6 +1251,13 @@ footer .contact-links a {
     }
     .footer-mobile {
         display: block;
+    }
+    .cards-row > * {
+        padding-right: calc(1.5rem / 3);
+        padding-left: calc(1.5rem / 3);
+    }
+    .cards-image {
+        margin-bottom: 8px;
     }
 }
 
@@ -1055,6 +1315,10 @@ footer .contact-links a {
     }
     .promotions-item {
         padding-bottom: 15px;
+    }
+    .columns-mp {
+        flex: 0 0 auto;
+        width: 33.3333333333%;
     }
 }
 

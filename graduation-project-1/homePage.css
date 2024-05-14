@@ -79,7 +79,9 @@ a:visited {
 }
 
 
-
+.header-top a {
+    cursor: pointer;
+}
 .header-top {
     background: #F7EBE5;
 }
@@ -730,6 +732,7 @@ footer {
     padding: 3px 3px 3px 0;
 }
 footer a:hover {
+    cursor: pointer;
     border-color: #E7426A;
 }
 footer .contact-links a {

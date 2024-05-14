@@ -32,8 +32,12 @@ body {
     color: #292929;
 }
 a {
+    color: #4e9dd3;
     text-decoration: none;
     transition: .2s;
+}
+a:hover, a:focus, a:active {
+    color: #191970;
 }
 a:hover, a:active {
     outline: 0;
@@ -298,7 +302,61 @@ h6, .cart-name a {
 
 
 main {
-    
+    background: #f7f7f7; 
+    padding-bottom: 50px;
+    display: block; 
+}
+.breadcrumbs {
+    padding-top: 40px;
+    text-align: center;
+}
+.breadcrumbs a {
+    display: inline-block;
+    padding: 0 5px;
+}
+.breadcrumbs .breadcrumb-last {
+    display: inline-block;
+    padding-left: 5px;
+}
+.cards {
+    text-align: center;
+    margin-top: 20px;
+}
+.cards-title {
+    margin-bottom: 25px;
+}
+main p {
+    margin-bottom: 1.5em;
+}
+.cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(1.5rem / -2);
+    margin-left: calc(1.5rem / -2);
+}
+.cards-row > * {
+    padding-right: calc(1.5rem / 2);
+    padding-left: calc(1.5rem / 2);
+}
+.justify-content-center {
+    justify-content: center !important;
+}
+.col-cell {
+    margin-bottom: 25px;
+}
+.column-cards {
+    flex: 0 0 auto;
+    width: 50%;
+}
+.cards-item {
+    color: #292929;
+}
+.cards-image {
+    margin-bottom: 20px;
+}
+img {
+    height: auto;
+    max-width: 100%;
 }
 
 
@@ -602,6 +660,13 @@ footer .contact-links a {
     h4 {
         font-size: 14px;
     }  
+    .breadcrumbs {
+        font-size: 13px;
+        text-align: left;
+    }
+    .cards-title {
+        margin-bottom: 12px;
+    }
 }
 
 
@@ -618,6 +683,21 @@ footer .contact-links a {
     }
     h4 {
         font-size: 12px;
+    }
+    .main {
+        padding-bottom: 40px;
+    }
+    .cards-row > * {
+        padding-right: calc(1.5rem / 3);
+        padding-left: calc(1.5rem / 3);
+    }
+    .cards-image {
+        margin-bottom: 8px;
+    }
+    .cards-description {
+        font-size: 12px;
+        text-align: left;
+        font-weight: normal;
     }
 
     .col-cell {
@@ -699,6 +779,10 @@ footer .contact-links a {
     .columns-mb {
         flex: 0 0 auto;
         width: 50%;
+    }
+    .column-mc {
+        flex: 0 0 auto;
+        width: 25%;
     }
 }
 

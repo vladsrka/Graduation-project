@@ -36,18 +36,7 @@ a:hover, a:active {
 a:visited {
     opacity: .8;
 }
-header a:hover {
-    border-color: #E7426A;
-}
-footer a:hover {
-    border-color: #E7426A;
-}
-:root {
-    --color-red: #e7426a;
-}
-footer .contact-links a:hover svg {
-    color: var(--color-red);
-}
+
 
 .promo-banner {
     background: #D4E9F9;
@@ -94,6 +83,9 @@ footer .contact-links a:hover svg {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+header a:hover {
+    border-color: #E7426A;
 }
 
 .menu {
@@ -591,6 +583,15 @@ footer {
     text-decoration: none;
     border-bottom: 2px solid transparent;
     padding: 3px 3px 3px 0;
+}
+footer a:hover {
+    border-color: #E7426A;
+}
+footer .contact-links a {
+    color: #292929;
+}
+footer .contact-links a:hover svg {
+    color: #E7426A;
 }
 .footer-widget br {
     height: 0;

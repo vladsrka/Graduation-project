@@ -148,7 +148,7 @@ document.addEventListener('click', function (event) {
 
 
 window.addEventListener('load', function (e) {
-  var slider = new Swiper('.promotions-slider', {
+  let slider = new Swiper('.promotions-slider', {
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',

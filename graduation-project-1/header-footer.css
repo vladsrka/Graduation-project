@@ -32,8 +32,12 @@ body {
     color: #292929;
 }
 a {
+    color: #4e9dd3;
     text-decoration: none;
     transition: .2s;
+}
+a:hover, a:focus, a:active {
+    color: #191970;
 }
 a:hover, a:active {
     outline: 0;
@@ -297,9 +301,6 @@ h6, .cart-name a {
 
 
 
-main {
-    
-}
 
 
 

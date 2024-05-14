@@ -158,6 +158,9 @@ header a:hover {
 }
 
 
+.header-bottom li {
+    cursor: pointer;
+}
 .header-bottom {
     padding: 18px 0;
 }

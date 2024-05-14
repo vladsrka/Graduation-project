@@ -30,8 +30,20 @@ a {
     text-decoration: none;
     transition: .2s;
 }
+a:hover, a:active {
+    outline: 0;
+}
 a:visited {
     opacity: .8;
+}
+header a:hover {
+    border-color: #E7426A;
+}
+footer a:hover {
+    border-color: #E7426A;
+}
+footer .contact-links a:hover {
+    color: #E7426A;
 }
 
 
@@ -96,6 +108,13 @@ a:visited {
     line-height: 1;
     border-bottom: 2px solid transparent;
     transition: 0.2s;
+}
+.menu-bottom-list > a:hover {
+    border-color: transparent;
+}
+.sub-menu a:hover {
+    border-color: transparent;
+    background: #F7F7F7;
 }
 
 .connect-top {
@@ -496,6 +515,7 @@ img {
 .holidays span {
     display: block;
 }
+
 
 
 

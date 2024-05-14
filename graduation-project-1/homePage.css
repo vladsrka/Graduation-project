@@ -509,6 +509,10 @@ img {
 .holidays span {
     display: block;
 }
+.holidays-item:hover {
+    color: #E7426A;
+    transform: scale(1.05);
+}
 
 
 

@@ -123,18 +123,6 @@ img {
     text-align: center;
     margin-bottom: 60px;
 }
-.wpcf .screen-reader-response {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    word-wrap: normal !important;
-}
 ul:not([class]) {
     padding-left: 1em;
 }
@@ -166,6 +154,18 @@ ul:not([class]) {
 }
 .cform-disclaimer {
     font-size: 11px;
+}
+.input-error {
+    border: 2px solid #dc3232;
+}
+.response-output {
+    margin: 2em 0.5em 1em;
+    padding: 0.2em 1em;
+}
+.response-output.active {
+    margin: 2em 0.5em 1em;
+    padding: 0.2em 1em;
+    border: 2px solid #46b450;
 }
 
 

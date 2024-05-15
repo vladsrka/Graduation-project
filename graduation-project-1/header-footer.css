@@ -273,29 +273,29 @@ header a:hover {
 
 
 
-h6, .cart-name a, h5, h4, .footer-phone, h3, h2, h1 {
+h6, .h6, .cart-name a, h5, .h5, h4, .h4, .footer-phone, h3, .h3, h2, .h2, h1, .h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     margin-bottom: 0.5em;
 }
-h1, h2, h3, h4, h5, h6 {
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     clear: both;
 }
-h1 {
+h1, .h1 {
     font-size: 42px !important; 
     font-size: 2em;
     margin: 0.67em 0;
 }
-h2 {
+h2, .h2 {
     font-size: 30px;
 }
-h3 {
+h3, .h3 {
     font-size: 20px;
 }
-h4, .footer-phone {
+h4, .h4, .footer-phone {
     font-size: 18px;
 }
-h6, .cart-name a {
+h6, .h6, .cart-name a {
     font-size: 14px;
 }
 
@@ -557,19 +557,19 @@ footer .contact-links a {
 
 
 
-    h1 {
+    h1, .h1 {
         font-size: 36px !important;
     }
-    h2 {
+    h2, .h2 {
         font-size: 28px;
     }
-    h3 {
+    h3, .h3 {
         font-size: 18px;
     }
-    h4 {
+    h4, .h4 {
         font-size: 16px;
     }
-    h6 {
+    h6, .h6 {
         font-size: 12px;
     }
 
@@ -591,16 +591,16 @@ footer .contact-links a {
 
 
 @media screen and (max-width: 768px) {
-    h1 {
+    h1, .h1 {
         font-size: 32px !important;
     }
-    h2 {
+    h2, .h2 {
         font-size: 24px;
     }
-    h3 {
+    h3, .h3 {
         font-size: 16px;
     }
-    h4 {
+    h4, .h4 {
         font-size: 14px;
     }  
 }
@@ -608,16 +608,16 @@ footer .contact-links a {
 
 @media screen and (max-width: 576px) {
 
-    h1 {
+    h1, .h1 {
         font-size: 28px !important;
     }
-    h2 {
+    h2, .h2 {
         font-size: 18px;
     }
-    h3 {
+    h3, .h3 {
         font-size: 14px;
     }
-    h4 {
+    h4, .h4 {
         font-size: 12px;
     }
 

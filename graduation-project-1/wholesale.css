@@ -170,17 +170,6 @@ ul:not([class]) {
 
 
 
-
-@media screen and (max-width: 1400px) {
-   
-}
-
-
-@media screen and (max-width: 1200px) {
- 
-}
-
-
 @media screen and (max-width: 992px) {
     .intro-subtitle {
         font-size: 16px;
@@ -220,12 +209,6 @@ ul:not([class]) {
     main {
         padding-bottom: 40px;
     }
-}
-
-
-
-@media screen and (min-width: 576px) {
-  
 }
 
 
@@ -278,9 +261,4 @@ ul:not([class]) {
     .btn-secondary {
         margin-bottom: 100px;
     }
-}
-
-
-@media screen and (min-width: 1400px) {
-
 }

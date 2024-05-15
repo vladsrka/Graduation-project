@@ -1,5 +1,6 @@
 main {
-    
+    background: #f7f7f7;
+    padding-bottom: 50px;
 }
 .row {
     display: flex;

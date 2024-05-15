@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/icon.png" type="image/png">
+    <!-- <link rel="stylesheet" href="./aos/aos.css" type="text/css"> -->
     <link rel="stylesheet" href="./normaliz.css" type="text/css">
     <link rel="stylesheet" href="./swiper/swiper.css" type="text/css">
     <link rel="stylesheet" href="./homePage.css" type="text/css">
-    <!-- <link rel="stylesheet" href="./aos/aos.css" type="text/css"> -->
 
     <title>Macaron shop</title>
 </head>
@@ -722,11 +722,11 @@
                     <div class="column-cards columns-mp col-cell aos-init aos-animate aos-cleaered">
 
                         <div class="card" data-id="20712">
-                            <a href="" class="card-image">
+                            <a class="card-image">
                                 <img decoding="async" width="1000" height="1200" src="./images/sladkie-podarki-4.png"
                                     class="attachment-full size-full" alt="сладкие подарки из натуральных ингредиентов">
                             </a>
-                            <a href="" class="card-content">
+                            <a class="card-content">
                                 <h4 class="card-title">
                                     MINI Набор кейк-попсов “Радужный”
                                 </h4>
@@ -981,6 +981,10 @@
 
                     </div>
                 </div>
+                <div id="popup" class="popup">
+                    <div id="popup-content" onclick="changeTextH(this, 'Ещё в разработке.')" class="popup-content">
+                    </div>
+                </div>
                 <div class="products-action aos-init aos-animate aos-cleaered">
                     <a onclick="changeText(this, 'Ещё в разработке.')" class="btn btn-secondary">Каталог десертов</a>
                 </div>
@@ -1210,12 +1214,13 @@
         </div>
     </footer>
 
-    <script src="./homePage.js"></script>
-    <script src="./swiper/swiper.js"></script>
     <!-- <script src="./aos/aos.js"></script>
     <script>
         AOS.init();
     </script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./homePage.js"></script>
+    <script src="./swiper/swiper.js"></script>
 </body>
 
 </html>

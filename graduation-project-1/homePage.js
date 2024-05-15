@@ -146,3 +146,20 @@ document.addEventListener('click', function (event) {
 });
 
 
+
+$(document).ready(function () {
+  $('.card').click(function () {
+    var cardContent = $(this).html();
+    var cardImage = $(this).find('img').attr('src');
+
+    var popupContent = cardContent;
+    $('#popup-content').html(popupContent);
+    $('#popup').show();
+  });
+
+  $('#popup').click(function (e) {
+    if (e.target === this) {
+      $(this).hide();
+    }
+  });
+});

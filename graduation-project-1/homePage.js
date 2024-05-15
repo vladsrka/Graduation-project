@@ -147,33 +147,53 @@ document.addEventListener('click', function (event) {
 
 
 
-window.addEventListener('load', function (e) {
-  let slider = new Swiper('.promotions-slider', {
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-    },
-    watchOverflow: true,
 
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      576: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 25,
-      },
-      1060: {
-        slidesPerView: 4,
-        spaceBetween: 30,
+const form = document.getElementById('forma');
+const formFields = form.elements;
+const submitBtn = form.querySelector('[type="submit"]');
+submitBtn.addEventListener('click', clearStorage);
+
+function retrieveFormValue(event) {
+  event.preventDefault();
+  let values = {};
+  for (let i = 0; i < formFields.length; i++) {
+    if (formFields[i].name) {
+      values[formFields[i].name] = formFields[i].value;
+    }
+  }
+  console.log(values);
+  localStorage.setItem('formData', JSON.stringify(values));
+}
+
+function clearStorage() {
+  localStorage.removeItem('formData');
+}
+
+function checkStorage() {
+  const savedData = localStorage.getItem('formData');
+  if (savedData) {
+    const parsedData = JSON.parse(savedData);
+    for (let i = 0; i < formFields.length; i++) {
+      if (parsedData[formFields[i].name]) {
+        formFields[i].value = parsedData[formFields[i].name];
       }
-    },
-  });
-});
+    }
+  }
+  attachEvents();
+}
 
+function changeHandler() {
+  const { name, value } = this;
+  localStorage.setItem(name, value);
+}
 
+function attachEvents() {
+  for (let i = 0; i < formFields.length; i++) {
+    if (formFields[i].type !== 'submit') {
+      formFields[i].addEventListener('change', changeHandler);
+    }
+  }
+}
+
+form.addEventListener('submit', retrieveFormValue);
+checkStorage();

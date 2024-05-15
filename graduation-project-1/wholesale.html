@@ -392,25 +392,12 @@
                                     Десерты для кофеен и кафе
                                 </h1>
                                 <div class="intro-subtitle hide-tablet aos-init aos-animate aos-cleaered">
-                                    <div class="promote">
-                                        <p class="promote-title" style="font-weight: bold">
-                                            Акция! Специальные условия доставки по России.
-                                            <a class="promote-action link-iconic">
-                                                Подробнее
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"
-                                                    style="width: auto; height: 1em;" fill="currentColor">
-                                                    <path
-                                                        d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z">
-                                                    </path>
-                                                </svg>
-                                            </a>
-                                        </p>
-                                    </div>
                                     Мы с 2013 года производим и поставляем оптом пирожные для кофеен и кафе. Наши
                                     десерты продаются в крупнейших кондитерских сетях Москвы и Петербурга. Они яркие,
                                     натуральные, позволяют делать высокую наценку, за ними возвращаются покупатели.
                                 </div>
-                                <button class="btn btn-secondary aos-init aos-animate aos-cleaered">
+                                <button onclick="changeText(this, 'Ещё в разработке.')"
+                                    class="btn btn-secondary aos-init aos-animate aos-cleaered">
                                     Скачать каталог
                                 </button>
                             </div>
@@ -484,12 +471,12 @@
                     </h2>
                     <div class="cform-form">
 
-                        <div class="wpcf7 js" lang="ru-RU" dir="ltr">
+                        <div class="wpcf js" lang="ru-RU" dir="ltr">
                             <div class="screen-reader-response">
                                 <p role="status" aria-live="polite" aria-atomic="true"></p>
                                 <ul></ul>
                             </div>
-                            <form method="post" class="form init">
+                            <form method="post" id="forma" class="form init">
                                 <div class="row">
                                     <div class="column col-md-6 col-lg-4">
                                         <label class="input">
@@ -502,7 +489,7 @@
                                         <label class="input">
                                             Ваш телефон*
                                             <span class="form-control-wrap">
-                                                <input size="40" class="input-field" placeholder="+375 (__) ___-__-__"
+                                                <input size="40" class="input-field" placeholder="+375 (__) ___-___-_"
                                                     value="" type="tel" name="uphone">
                                             </span>
                                         </label>
@@ -534,13 +521,13 @@
                                     </div>
                                 </div>
                                 <div class="cform-submit">
-                                    <input class="btn btn-main" type="submit" value="Заказать расчёт">
-                                    <span class="spinner"></span>
+                                    <button class="btn btn-main" type="submit">Заказать расчёт</button>
                                 </div>
                                 <div class="response-output" aria-hidden="true"></div>
                             </form>
                         </div>
                     </div>
+
                     <div class="cform-disclaimer">
                         <div class="disclaimer">
                             Нажимая на кнопку “Оформить заказ” Я принимаю и соглашаюсь с Договором

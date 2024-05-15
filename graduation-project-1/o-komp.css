@@ -20,6 +20,13 @@ main a {
     display: inline-block;
     padding-left: 5px;
 }
+.cards {
+    text-align: center;
+    margin-top: 20px;
+}
+.cards-title {
+    margin-bottom: 25px;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -30,16 +37,27 @@ main a {
     padding-right: calc(1.5rem / 2);
     padding-left: calc(1.5rem / 2);
 }
-.contacts {
-    padding-bottom: 5px;
+.justify-content-center {
+    justify-content: center !important;
+}
+.col-cell {
+    margin-bottom: 25px;
 }
 .column {
     flex: 0 0 auto;
-    width: 100%;
+    width: 50%;
 }
-.contacts-image {
-    text-align: center;
+.cards-item {
+    color: #292929;
 }
+.cards-image {
+    margin-bottom: 20px;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+
 
 
 @media screen and (max-width: 1400px) {
@@ -53,12 +71,16 @@ main a {
 
 
 @media screen and (max-width: 992px) {
-
+    .col-cell {
+        margin-bottom: 25px;
+    }
 }
 
 
 @media screen and (max-width: 768px) {
-
+    .cards-title {
+        margin-bottom: 12px;
+    }
 }
 
 
@@ -66,6 +88,12 @@ main a {
     .row > * {
         padding-right: calc(1.5rem / 3);
         padding-left: calc(1.5rem / 3);
+    }
+    .col-cell {
+        margin-bottom: 15px;
+    }
+    .cards-image {
+        margin-bottom: 8px;
     }
 }
 
@@ -77,9 +105,6 @@ main a {
 
 
 @media screen and (min-width: 768px) {
-    .order-md-last {
-        order: 6 !important;
-    }
     .column-md {
         flex: 0 0 auto;
         width: 25%;

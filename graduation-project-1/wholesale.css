@@ -2,6 +2,12 @@ main {
     background: #f7f7f7;
     padding-bottom: 50px;
 }
+main p {
+    margin-bottom: 1.5em;
+}
+main a {
+    cursor: pointer;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -31,6 +37,21 @@ main {
     flex: 0 0 auto;
     width: 100%;
 }
+.hide-desktop {
+    display: none;
+}
+.intro-subtitle {
+    max-width: 500px;
+    margin: 0 auto 35px;
+    font-size: 18px;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+.intro-content {
+    text-align: center;
+}
 
 
 
@@ -45,7 +66,9 @@ main {
 
 
 @media screen and (max-width: 992px) {
-   
+    .intro-subtitle {
+        font-size: 16px;
+    }
 }
 
 
@@ -56,6 +79,19 @@ main {
     }
     .intro {
         text-align: center;
+    }
+    .intro-title {
+        margin-top: 40px;
+    }
+    .hide-desktop {
+        display: block;
+    }
+    .intro-subtitle {
+        max-width: unset;
+        font-size: 14px;
+    }
+    .hide-tablet {
+        display: none;
     }
 }
 

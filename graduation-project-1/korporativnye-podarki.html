@@ -7,7 +7,7 @@
     <link rel="icon" href="./images/icon.png" type="image/png">
     <link rel="stylesheet" href="./normaliz.css" type="text/css">
     <link rel="stylesheet" href="./header-footer.css" type="text/css">
-    <link rel="stylesheet" href="./korporativnye-podarki.css" type="text/css">
+    <link rel="stylesheet" href="./wholesale.css" type="text/css">
 
     <title>Корпоративные подарки</title>
 </head>
@@ -341,7 +341,186 @@
         </section>
     </header>
 
-    <main>
+    <main class="main">
+        <div class="breadcrumbs container">
+            <span>
+                <span>
+                    <a href="./homePage.html">
+                        Главная страница
+                    </a>
+                </span> »
+                <span class="breadcrumb-last" aria-current="page">
+                    Десерты для кофеен и кафе
+                </span>
+            </span>
+        </div>
+        <div class="canvas">
+            <section class="intro">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="column col-md-5">
+                            <div class="intro-title h1 hide-desktop aos-init aos-animate aos-cleaered">
+                                Десерты для кофеен и кафе
+                            </div>
+                            <div class="intro-subtitle hide-desktop aos-init aos-animate aos-cleaered">
+                                Брендированные макаронс и эклеры — лучший подарок для коллег и контрагентов. Мы
+                                приготовим пирожные поштучно от 70 руб., в наборах от 350 руб., сделаем индивидуальный
+                                дизайн и нанесём ваши лого.
+                            </div>
+                            <div class="intro-image aos-init aos-animate aos-cleaered">
+                                <img fetchpriority="high" decoding="async" width="469" height="369"
+                                    src="./images/korporativnye-podarki.png" class="attachment-full size-full">
+                            </div>
+                        </div>
+                        <div class="column col-md-7">
+                            <div class="intro-content">
+                                <h1 class="intro-title hide-tablet aos-init aos-animate aos-cleaered">
+                                    Десерты для кофеен и кафе
+                                </h1>
+                                <div class="intro-subtitle hide-tablet aos-init aos-animate aos-cleaered">
+                                    Брендированные макаронс и эклеры — лучший подарок для коллег и контрагентов. Мы
+                                    приготовим пирожные поштучно от 70 руб., в наборах от 350 руб., сделаем
+                                    индивидуальный дизайн и нанесём ваши лого.
+                                </div>
+                                <button onclick="changeText(this, 'Ещё в разработке.')"
+                                    class="btn btn-secondary aos-init aos-animate aos-cleaered">
+                                    Скачать каталог
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="offers">
+                <div class="container">
+                    <h2 class="offers-title">
+                        Брендированные пирожные — лучший подарок:
+                    </h2>
+                    <div class="offers-grid">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="column-cards col-md-4 col-lg-3 col-cell">
+                                <div class="offers-item">
+                                    <div class="offers-icon">
+                                        <img decoding="async" width="150" height="150" src="./images/corporateGifts.svg"
+                                            class="attachment-thumbnail size-thumbnail" alt="">
+                                    </div>
+                                    <h6 class="offers-description">
+                                        Коллегам
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="column-cards col-md-4 col-lg-3 col-cell">
+                                <div class="offers-item">
+                                    <div class="offers-icon">
+                                        <img decoding="async" width="150" height="150" src="./images/assembleTheSet.svg"
+                                            class="attachment-thumbnail size-thumbnail" alt="">
+                                    </div>
+                                    <h6 class="offers-description">
+                                        Сотрудникам
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="column-cards col-md-4 col-lg-3 col-cell">
+                                <div class="offers-item">
+                                    <div class="offers-icon">
+                                        <img decoding="async" width="150" height="150" src="./images/cakesWholesale.svg"
+                                            class="attachment-thumbnail size-thumbnail" alt="">
+                                    </div>
+                                    <h6 class="offers-description">
+                                        Клиентам
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="column-cards col-md-4 col-lg-3 col-cell">
+                                <div class="offers-item">
+                                    <div class="offers-icon">
+                                        <img decoding="async" width="150" height="150"
+                                            src="./images/weddingProposal.svg"
+                                            class="attachment-thumbnail size-thumbnail" alt="">
+                                    </div>
+                                    <h6 class="offers-description">
+                                        Родным и близким
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cform" id="price">
+                <div class="container">
+                    <h2 class="cform-title">
+                        Заказать расчёт или отправить запрос
+                        на сотрудничество
+                    </h2>
+                    <div class="cform-form">
+
+                        <div class="wpcf js" lang="ru-RU" dir="ltr">
+                            <form method="post" id="forma" class="form init">
+                                <div class="row">
+                                    <div class="column col-md-6 col-lg-4">
+                                        <label class="input">
+                                            Ваше имя*
+                                            <span class="form-control-wrap">
+                                                <input size="40" class="input-field" placeholder="Укажите имя" value=""
+                                                    type="text" name="uname">
+                                            </span>
+                                        </label>
+                                        <label class="input">
+                                            Ваш телефон*
+                                            <span class="form-control-wrap">
+                                                <input size="40" class="input-field" placeholder="+375 (__) ___-___-_"
+                                                    value="" type="tel" name="uphone">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="column col-md-6 col-lg-4">
+                                        <label class="input">
+                                            Название компании
+                                            <span class="form-control-wrap">
+                                                <input size="40" class="input-field" placeholder="Укажите компанию"
+                                                    value="" type="text" name="ucompany">
+                                            </span>
+                                        </label>
+                                        <label class="input">
+                                            Ваш email
+                                            <span class="form-control-wrap">
+                                                <input size="40" class="input-field" placeholder="Укажите email"
+                                                    value="" type="email" name="umail">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="column col-md-6 col-lg-4">
+                                        <label class="input">
+                                            Добавить комментарий
+                                            <span class="form-control-wrap">
+                                                <textarea cols="30" rows="10" class="input-field" name="umessage">
+                                                </textarea>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="cform-submit">
+                                    <button class="btn btn-main" type="submit">Заказать расчёт</button>
+                                </div>
+                                <div class="response-output"></div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="cform-disclaimer">
+                        <div class="disclaimer">
+                            Нажимая на кнопку “Оформить заказ” Я принимаю и соглашаюсь с Договором
+                            оферты и разрешаю обработку моих персональных данных в соответствии с
+                            <a href="./privacy-policy.html" target="_blank">
+                                Политикой конфиденциальности
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
     </main>
 
     <footer>
@@ -507,6 +686,7 @@
     </footer>
 
     <script src="./homePage.js"></script>
+    <script src="./forma.js"></script>
 </body>
 
 </html>

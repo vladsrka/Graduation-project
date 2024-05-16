@@ -198,6 +198,10 @@ ul:not([class]) {
     .hide-tablet {
         display: none;
     }
+    .intro .btn {
+        margin-top: 10px;
+        margin-right: 0 !important;
+    }
 }
 
 

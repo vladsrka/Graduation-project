@@ -76,6 +76,10 @@ img {
     border: 1px solid #4e9dd3;
     background: transparent;
 }
+.btn-secondary:hover, .btn-secondary.btn-hover {
+    background: #4e9dd3;
+    color: #fff;
+}
 .offers {
     margin-top: 80px;
 }
@@ -151,6 +155,11 @@ ul:not([class]) {
     padding: 16px 40px;
     border: 1px solid #e7426a;
     min-width: 230px;
+}
+.btn-main:hover {
+    background: #f45d82;
+    border-color: #f45d82;
+    color: #fff;
 }
 .cform-disclaimer {
     font-size: 11px;

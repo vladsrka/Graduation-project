@@ -32,6 +32,7 @@ body {
     color: #292929;
 }
 a {
+    cursor: pointer;
     text-decoration: none;
     transition: .2s;
 }
@@ -557,6 +558,12 @@ img {
     margin-right: calc(1.5rem / -2);
     margin-left: calc(1.5rem / -2);
 }
+.products-row a {
+    color: #292929 !important;
+}
+.products-row a span {
+    color: #292929 !important;
+}
 .products-row > * {
     padding-right: calc(1.5rem / 2);
     padding-left: calc(1.5rem / 2);
@@ -658,6 +665,10 @@ body .card .add-to-cart-button:before {
     color: #292929;
     border: 1px solid #4e9dd3;
     background: transparent;
+}
+.btn-secondary:hover, .btn-secondary.btn-hover {
+    background: #4e9dd3;
+    color: #fff;
 }
 .btn {
     font-size: 14px;

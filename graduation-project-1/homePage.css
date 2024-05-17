@@ -434,6 +434,7 @@ img {
     padding-bottom: 50px;
 }
 .promotions-item {
+    cursor: pointer;
     text-align: center;
     display: flex;
     flex-direction: column;

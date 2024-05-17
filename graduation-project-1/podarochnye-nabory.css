@@ -1,0 +1,103 @@
+main {
+    background: #f7f7f7;
+    padding-bottom: 50px;
+}
+h2 {
+    margin: 0.67em 0;
+}
+.has-text-align-center {
+    text-align: center;
+}
+.breadcrumbs {
+    padding-top: 40px;
+    text-align: center;
+}
+.breadcrumbs a {
+    color: #4e9dd3;
+    display: inline-block;
+    padding: 0 5px;
+}
+.breadcrumbs a:hover, 
+.breadcrumbs a:focus, 
+.breadcrumbs a:active {
+    color: #191970;
+}
+.labels a:hover, 
+.labels a:focus, 
+.labels a:active {
+    color: #191970;
+}
+.breadcrumbs .breadcrumb-last {
+    display: inline-block;
+    padding-left: 5px;
+}
+.collections {
+    padding-bottom: 40px;
+}
+.collections-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.labels {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+.labels-item {
+    padding: 11px 14px;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    background: #f7ebe5;
+    margin-right: 5px;
+    color: rgba(41, 41, 41, 0.83);
+    font-size: 14px;
+    transition: 0.2s;
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+}
+.products-row {
+    margin-top: 40px;
+}
+.btn-secondary {
+    margin-top: 40px;
+}
+.labels::-webkit-scrollbar {
+    height: 6px; 
+    padding-top: 10px;
+    cursor: pointer;
+}
+.labels::-webkit-scrollbar-thumb {
+    background: #ddd;
+    cursor: pointer;
+}
+.labels::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    cursor: pointer;
+}
+.labels-item:hover {
+    border: 1px solid #ecc7b4;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .breadcrumbs {
+        font-size: 13px;
+        text-align: left;
+    }
+    .collections {
+        padding-bottom: 0;
+    }
+    .collections-title {
+        margin-bottom: 10px;
+    }
+    .labels-item {
+        font-size: 12px;
+        padding: 7px 8px;
+    }
+    .btn-secondary {
+        margin-top: 20px;
+    }
+}

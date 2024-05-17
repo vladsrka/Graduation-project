@@ -1,0 +1,148 @@
+main {
+    background: #f7f7f7;
+    padding-bottom: 50px; 
+}
+.breadcrumbs {
+    padding-top: 40px;
+    text-align: center;
+}
+.breadcrumbs a {
+    display: inline-block;
+    padding: 0 5px;
+}
+.myset-title {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(1.5rem / -2);
+    margin-left: calc(1.5rem / -2);
+}
+.row > * {
+    padding-right: calc(1.5rem / 2);
+    padding-left: calc(1.5rem / 2);
+}
+.justify-content-center {
+    justify-content: center !important;
+}
+.column {
+    flex: 0 0 auto;
+    width: 50%;
+}
+.col-cell {
+    margin-bottom: 25px;
+}
+.sizecard {
+    background: #ffffff;
+    border: 1px solid #ededf0;
+    border-radius: 5px;
+    padding: 15px 15px 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+.sizecard-name {
+    margin-top: 15px;
+}
+.amount {
+    color: #e7426a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+
+
+@media screen and (max-width: 1400px) {
+   
+}
+
+
+@media screen and (max-width: 1200px) {
+ 
+}
+
+
+@media screen and (max-width: 992px) {
+    .amount {
+        font-size: 16px;
+    }
+    .col-cell {
+        margin-bottom: 25px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .breadcrumbs {
+        font-size: 13px;
+        text-align: left;
+    }
+    .amount {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .row > * {
+        padding-right: calc(1.5rem / 3.5);
+        padding-left: calc(1.5rem / 3.5);
+    }
+    main {
+        padding-bottom: 20px;
+    }
+    .sizecard-name {
+        margin-top: 10px;
+    }
+    .col-cell {
+        margin-bottom: 15px;
+    }
+    .sizecard {
+        padding: 10px 10px 20px;
+    }
+}
+
+
+
+@media screen and (min-width: 576px) {
+  
+}
+
+
+@media screen and (min-width: 768px) {
+    .column-md {
+        flex: 0 0 auto;
+        width: 33.3333333333%;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    .column-xl {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+
+}

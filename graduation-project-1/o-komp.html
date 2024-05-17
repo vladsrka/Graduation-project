@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icon.png" type="image/png">
+    <link rel="stylesheet" href="./normaliz.css" type="text/css">
+    <link rel="stylesheet" href="./header-footer.css" type="text/css">
+    <link rel="stylesheet" href="./o-komp.css" type="text/css">
+
+    <title>О компании</title>
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <section class="promo-banner">
+        <div class="container">
+            <div class="slider-lines">
+                <div class="slider-line line1">
+                    <img class="promo-img" src="./images/delivery.svg" alt="delivery">
+                    <p>ДОСТАВКА В ДЕНЬ ЗАКАЗА</p>
+                </div>
+                <div class="slider-line line2">
+                    <img class="promo-img" src="./images/supplies.svg" alt="supplies">
+                    <p>ОПТОВЫЕ ПОСТАВКИ ОТ ПРОИЗВОДИТЕЛЯ</p>
+                </div>
+                <div class="slider-line line3">
+                    <img class="promo-img" src="./images/fresh.svg" alt="fresh">
+                    <p>ВСЕГДА СВЕЖЕЕ</p>
+                </div>
+                <div class="slider-line line4">
+                    <img class="promo-img" src="./images/almond.svg" alt="almond">
+                    <p>МИНДАЛЬНАЯ МУКА И НАТУРАЛЬНЫЕ ИНГРЕДИЕНТЫ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <section class="header-top">
+            <div class="container">
+                <nav class="menu-top">
+                    <ul id="primary" class="menu">
+                        <li>
+                            <a href="./garanty.html">Гарантия свежести</a>
+                        </li>
+                        <li>
+                            <a href="./delivery.html">Доставка и оплата</a>
+                        </li>
+                        <li>
+                            <a href="./wholesale.html">Оптовые поставки</a>
+                        </li>
+                        <li>
+                            <a href="./contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="connect-top">
+                    <div class="location">
+                        <img src="./images/location.svg">
+                        <p onclick="changeText(this, 'Ещё в разработке.')">Гомель</p>
+                        <img src="./images/Vector.svg">
+                    </div>
+                    <div class="contact-phone">
+                        <a href="tel:+375336530429">
+                            <img src="./images/phone.svg">
+                            <p>+375 33 653-042-9</p>
+                        </a>
+                    </div>
+                    <div class="basket">
+                        <a>
+                            <img src="./images/bag.svg">
+                            <p onclick="changeText(this, 'Ещё в разработке.')">Корзина</p>
+                        </a>
+                    </div>
+                    <div class="contact-links">
+                        <a href="https://t.me/vladsrka" target="_blank">
+                            <img src="./images/telegram.svg">
+                        </a>
+                        <a href="https://vk.com/vladsrka" target="_blank">
+                            <img src="./images/vk.svg">
+                        </a>
+                        <a href="https://www.instagram.com/vladsrka/" target="_blank">
+                            <img src="./images/instagram.svg">
+                        </a>
+                    </div>
+                </nav>
+                <div class="mobile-bottom">
+                    <a onclick="addStateOpenClass()">
+                        <img src="./images/mobile-menu.svg">
+                    </a>
+
+                </div>
+                <div class="mobile-bottom">
+                    <a href="./homePage.html">
+                        <img src="./images/logo-mobile.svg">
+                    </a>
+                </div>
+                <div class="mobile-bottom">
+                    <a>
+                        <img src="./images/bag.svg">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="header-bottom">
+            <div class="container">
+                <div class="left-bottom">
+                    <div class="menu-left-container">
+                        <ul id="menu-bottom-left" class="menu">
+                            <li class="sale">
+                                <a href="./sales-week.html">СЛАДКИЕ ДНИ</a>
+                            </li>
+                            <li class="menu-bottom-list">
+                                <a>
+                                    ПОДАРОЧНЫЕ НАБОРЫ
+                                    <img src="./images/Vector.svg">
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="./podarochnye-nabory.html">ВСЕ НАБОРЫ</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="changeText(this, 'Ещё в разработке.')">ДЕНЬ РОЖДЕНИЯ</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="changeText(this, 'Ещё в разработке.')">МАКАРОНС КЛАССИЧЕСКИЕ</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="changeText(this, 'Ещё в разработке.')">СВАДЕБНЫЕ ПРЕДЛОЖЕНИЯ</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="changeText(this, 'Ещё в разработке.')">КЕНДИ-БАРЫ</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="changeText(this, 'Ещё в разработке.')">ДЕТСКИЕ ПРАЗДНИКИ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./sobrat-nabor.html">СОБРАТЬ НАБОР</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="center-bottom">
+                    <a href="./homePage.html">
+                        <img class="logo-1" src="./images/logo.svg">
+                    </a>
+                </div>
+                <div class="right-bottom">
+                    <div class="menu-right-container">
+                        <ul id="menu-bottom-right" class="menu">
+                            <li>
+                                <a href="./print.html">СОЗДАТЬ ДИЗАЙН</a>
+                            </li>
+                            <li class="menu-bottom-list">
+                                <a>
+                                    КОМПАНИЯМ
+                                    <img src="./images/Vector.svg">
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="./wholesale.html">ОПТОВЫЕ ПОСТАВКИ</a>
+                                    </li>
+                                    <li>
+                                        <a href="./korporativnye-podarki.html">КОРПОРАТИВНЫЕ ПОДАРКИ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-bottom-list">
+                                <a>
+                                    ВЕСЬ КАТАЛОГ
+                                    <img src="./images/Vector.svg">
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a onclick="changeText(this, 'Ещё в разработке.')">МАКАРОНС</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="changeText(this, 'Ещё в разработке.')">ЭКЛЕРЫ</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="changeText(this, 'Ещё в разработке.')">ПОДАРОЧНЫЕ НАБОРЫ</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="changeText(this, 'Ещё в разработке.')">ВАФЕЛЬНЫЕ ТРУБОЧКИ</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="changeText(this, 'Ещё в разработке.')">ЗЕФИР</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="changeText(this, 'Ещё в разработке.')">КЕЙК-ПОПСЫ</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="changeText(this, 'Ещё в разработке.')">ДЕСЕРТ КАРТОШКА</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="changeText(this, 'Ещё в разработке.')">КОМБО-НАБОРЫ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="header-mobile">
+            <div class="container">
+                <div class="close-menu-button" onclick="removeStateOpenClass()">
+                    <img src="./images/close-menu-button.svg">
+                </div>
+                <div class="location">
+                    <img src="./images/location.svg">
+                    <p onclick="changeText(this, 'В разработке.')">Гомель</p>
+                    <img src="./images/Vector.svg">
+                </div>
+                <div class="header-mobile-menu1">
+                    <ul class="menu-bordered">
+                        <li class="sale">
+                            <a href="./sales-week.html">СЛАДКИЕ ДНИ</a>
+                        </li>
+                        <li class="menu-bottom-list">
+                            <a class="bottom-list">
+                                ПОДАРОЧНЫЕ НАБОРЫ
+                                <img src="./images/Vector.svg">
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="./podarochnye-nabory.html">ВСЕ НАБОРЫ</a>
+                                </li>
+                                <li>
+                                    <a onclick="changeText(this, 'Ещё в разработке.')">ДЕНЬ РОЖДЕНИЯ</a>
+                                </li>
+                                <li>
+                                    <a onclick="changeText(this, 'Ещё в разработке.')">МАКАРОНС КЛАССИЧЕСКИЕ</a>
+                                </li>
+                                <li>
+                                    <a onclick="changeText(this, 'Ещё в разработке.')">СВАДЕБНЫЕ ПРЕДЛОЖЕНИЯ</a>
+                                </li>
+                                <li>
+                                    <a onclick="changeText(this, 'Ещё в разработке.')">КЕНДИ-БАРЫ</a>
+                                </li>
+                                <li>
+                                    <a onclick="changeText(this, 'Ещё в разработке.')">ДЕТСКИЕ ПРАЗДНИКИ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./sobrat-nabor.html">СОБРАТЬ НАБОР</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-mobile-menu2">
+                    <ul class="menu-bordered">
+                        <li>
+                            <a href="./print.html">СОЗДАТЬ ДИЗАЙН</a>
+                        </li>
+                        <li class="menu-bottom-list">
+                            <a class="bottom-list">
+                                КОМПАНИЯМ
+                                <img src="./images/Vector.svg">
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="./wholesale.html">ОПТОВЫЕ ПОСТАВКИ</a>
+                                </li>
+                                <li>
+                                    <a href="./korporativnye-podarki.html">КОРПОРАТИВНЫЕ ПОДАРКИ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-bottom-list">
+                            <a class="bottom-list">
+                                ВЕСЬ КАТАЛОГ
+                                <img src="./images/Vector.svg">
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a onclick="changeText(this, 'Ещё в разработке.')">МАКАРОНС</a>
+                                </li>
+                                <li>
+                                    <a onclick="changeText(this, 'Ещё в разработке.')">ЭКЛЕРЫ</a>
+                                </li>
+                                <li>
+                                    <a onclick="changeText(this, 'Ещё в разработке.')">ПОДАРОЧНЫЕ НАБОРЫ</a>
+                                </li>
+                                <li>
+                                    <a onclick="changeText(this, 'Ещё в разработке.')">ВАФЕЛЬНЫЕ ТРУБОЧКИ</a>
+                                </li>
+                                <li>
+                                    <a onclick="changeText(this, 'Ещё в разработке.')">ЗЕФИР</a>
+                                </li>
+                                <li>
+                                    <a onclick="changeText(this, 'Ещё в разработке.')">КЕЙК-ПОПСЫ</a>
+                                </li>
+                                <li>
+                                    <a onclick="changeText(this, 'Ещё в разработке.')">ДЕСЕРТ КАРТОШКА</a>
+                                </li>
+                                <li>
+                                    <a onclick="changeText(this, 'Ещё в разработке.')">КОМБО-НАБОРЫ</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="menu-top">
+                    <ul id="main-nav" class="menu-small">
+                        <li>
+                            <a href="./garanty.html">Гарантия свежести</a>
+                        </li>
+                        <li>
+                            <a href="./delivery.html">Доставка и оплата</a>
+                        </li>
+                        <li>
+                            <a href="./wholesale.html">Оптовые поставки</a>
+                        </li>
+                        <li>
+                            <a href="./contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="contact-phone">
+                    <a class="site-phone" href="tel:+375336530429">
+                        <img src="./images/phone.svg">
+                        <p>+375 33 653-042-9</p>
+                    </a>
+                </div>
+                <div class="contact-links">
+                    <a href="https://t.me/vladsrka" target="_blank">
+                        <img src="./images/telegram.svg">
+                    </a>
+                    <a href="https://vk.com/vladsrka" target="_blank">
+                        <img src="./images/vk.svg">
+                    </a>
+                    <a href="https://www.instagram.com/vladsrka/" target="_blank">
+                        <img src="./images/instagram.svg">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main class="main">
+        <div class="breadcrumbs container">
+            <span>
+                <span>
+                    <a href="./homePage.html">
+                        Главная страница
+                    </a>
+                </span> »
+                <span class="breadcrumb-last" aria-current="page">
+                    О компании МакаронШоп
+                </span>
+            </span>
+        </div>
+        <div class="canvas">
+            <section class="cards">
+                <div class="container">
+                    <h2 class="cards-title aos-init aos-animate aos-cleaered">
+                        О компании МакаронШоп
+                    </h2>
+                    <p class="cards-snippet aos-init aos-animate aos-cleaered">
+                        Компания МакаронШоп основана в 2013
+                        году. Мы — первый производитель пирожных макаронс в Санкт-Петербурге. Изначально мы развивали
+                        только один продукт — французские пирожные. А позже начали производить ещё вафельные трубочки,
+                        орешки, профитроли и эклеры. Сейчас мы поставляем нашу продукцию в крупнейшие кофейные и
+                        кондитерские сети Петербурга, а также кафе и рестораны. У нас можно заказать все виды пирожных
+                        оптом или запросить розничный прайс.
+                    </p>
+                    <div class="row justify-content-center">
+                        <div class="column column-md col-cell">
+                            <div class="cards-item aos-init aos-animate aos-cleaered">
+                                <div class="cards-image">
+                                    <img fetchpriority="high" decoding="async" width="565" height="619"
+                                        src="./images/kupit-ekler-spb-16.png" class="attachment-full size-full"
+                                        alt="эклеры">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column column-md col-cell">
+                            <div class="cards-item aos-init aos-animate aos-cleaered">
+
+                                <div class="cards-image">
+                                    <img decoding="async" width="565" height="619" src="./images/bolshye-nabory-6.png"
+                                        class="attachment-full size-full" alt="макаронс ко дню 8 марта">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column column-md col-cell">
+                            <div class="cards-item aos-init aos-animate aos-cleaered">
+
+                                <div class="cards-image">
+                                    <img decoding="async" width="565" height="619" src="./images/profitroli-kupit.png"
+                                        class="attachment-full size-full" alt="профитроли">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column column-md col-cell">
+                            <div class="cards-item aos-init aos-animate aos-cleaered">
+
+                                <div class="cards-image">
+                                    <img decoding="async" width="565" height="619" src="./images/trubochki-3.png"
+                                        class="attachment-full size-full" alt="трубочки со сгущенкой">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-columns columns-edit">
+                    <div class="footer-widget">
+                        <h3>Информация</h3>
+                        <div class="text-widget">
+                            <p>
+                                <a href="./o-komp.html">О компании</a><br>
+                                <a href="./garanty.html">Гарантии вкуса и свежести</a><br>
+                                <a href="./delivery.html">Доставка и оплата</a><br>
+                                <a href="./contacts.html">Контакты</a><br>
+                                <a href="./privacy-policy.html">Политика конфиденциальности</a><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-columns columns-edit">
+                    <div class="footer-widget">
+                        <h3>Каталог</h3>
+                        <div class="text-widget">
+                            <p>
+                                <a href="./podarochnye-nabory.html">Подарочные наборы</a><br>
+                                <a href="./sobrat-nabor.html">Собрать свой набор</a><br>
+                                <a href="./print.html">Создать дизайн</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-columns columns-edit">
+                    <div class="footer-widget">
+                        <h3>ДЛЯ БИЗНЕСА</h3>
+                        <div class="text-widget">
+                            <p>
+                                <a href="./korporativnye-podarki.html">Корпоративные подарки</a><br>
+                                <a href="./wholesale.html">Оптовикам</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-columns columns-edit footer-last">
+                    <div class="widget-text footer-widget">
+                        <div class="text-widget custom-html-widget">
+                            <a href="tel:+375336530429" class="footer-phone">
+                                +375 (33) 653 042 9
+                            </a><br>
+                            с 9:00 до 18:00
+                        </div>
+                    </div>
+                    <div class="contact-links">
+                        <a href="https://t.me/vladsrka" target="_blank">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.9732 0.0468448L0.339879 5.1234C-0.134095 5.28784 -0.105381 5.89335 0.382518 6.02159L4.10099 6.99912L5.48873 10.9192C5.63369 11.3287 6.21657 11.4529 6.55399 11.1461L8.47653 9.39857L12.2487 11.8636C12.7104 12.1652 13.3678 11.9411 13.485 11.4421L15.9834 0.808462C16.1057 0.287594 15.5301 -0.14637 14.9732 0.0468448ZM13.1385 2.40672L6.34146 7.75766C6.27371 7.81101 6.23059 7.88483 6.22051 7.96485L5.95882 10.0358C5.95027 10.1034 5.8441 10.1123 5.82144 10.0474L4.74476 6.95885C4.69544 6.81745 4.75974 6.66424 4.90105 6.58623L12.9277 2.15443C13.1123 2.05243 13.3013 2.27865 13.1385 2.40672Z" />
+                            </svg>
+                        </a>
+                        <a href="https://vk.com/vladsrka" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.343 17.4535H12.3498C12.3498 17.4535 12.6539 17.4202 12.8092 17.2528C12.9521 17.0991 12.9475 16.8105 12.9475 16.8105C12.9475 16.8105 12.9278 15.4596 13.5548 15.2607C14.1729 15.0647 14.9666 16.5663 15.8078 17.1437C16.444 17.5807 16.9274 17.4849 16.9274 17.4849L19.1768 17.4535C19.1768 17.4535 20.3535 17.3811 19.7955 16.4559C19.7498 16.3802 19.4706 15.7715 18.1231 14.5207C16.7127 13.2116 16.9015 13.4234 18.6005 11.1589C19.6352 9.77983 20.0489 8.93789 19.9197 8.57728C19.7964 8.23383 19.0354 8.32461 19.0354 8.32461L16.5028 8.34039C16.5028 8.34039 16.315 8.31478 16.1758 8.39801C16.0397 8.47964 15.9521 8.66989 15.9521 8.66989C15.9521 8.66989 15.5513 9.73707 15.0167 10.6446C13.8889 12.5597 13.438 12.6608 13.2537 12.5419C12.8249 12.2647 12.9319 11.4285 12.9319 10.8344C12.9319 8.97859 13.2134 8.20479 12.3838 8.00448C12.1085 7.93794 11.9059 7.89404 11.2019 7.88695C10.2982 7.87757 9.53332 7.88969 9.10023 8.10189C8.81212 8.24298 8.58985 8.55739 8.72522 8.57546C8.89261 8.59786 9.27173 8.67767 9.47272 8.95138C9.73226 9.30443 9.72311 10.0974 9.72311 10.0974C9.72311 10.0974 9.8722 12.2821 9.37486 12.5535C9.03346 12.7396 8.56516 12.3596 7.55973 10.6222C7.04455 9.73226 6.65559 8.74855 6.65559 8.74855C6.65559 8.74855 6.58059 8.56471 6.44682 8.46638C6.28447 8.34725 6.05763 8.30929 6.05763 8.30929L3.65095 8.32507C3.65095 8.32507 3.28966 8.33513 3.15704 8.49222C3.03905 8.63194 3.14766 8.92097 3.14766 8.92097C3.14766 8.92097 5.03185 13.3291 7.16528 15.5506C9.1215 17.5873 11.343 17.4535 11.343 17.4535Z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/vladsrka/" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.4806 0H5.51916C2.4759 0 0 2.47601 0 5.51928V14.4807C0 17.5241 2.4759 20 5.51916 20H14.4806C17.5241 20 20 17.524 20 14.4807V5.51928C20.0001 2.47601 17.5241 0 14.4806 0ZM18.2256 14.4807C18.2256 16.5456 16.5456 18.2255 14.4807 18.2255H5.51916C3.45435 18.2256 1.7745 16.5456 1.7745 14.4807V5.51928C1.7745 3.45447 3.45435 1.7745 5.51916 1.7745H14.4806C16.5455 1.7745 18.2255 3.45447 18.2255 5.51928V14.4807H18.2256Z" />
+                                <path
+                                    d="M10.0002 4.84668C7.15849 4.84668 4.84668 7.15849 4.84668 10.0002C4.84668 12.8417 7.15849 15.1534 10.0002 15.1534C12.8419 15.1534 15.1537 12.8417 15.1537 10.0002C15.1537 7.15849 12.8419 4.84668 10.0002 4.84668ZM10.0002 13.3788C8.13707 13.3788 6.62118 11.8632 6.62118 10.0001C6.62118 8.13683 8.13695 6.62106 10.0002 6.62106C11.8634 6.62106 13.3792 8.13683 13.3792 10.0001C13.3792 11.8632 11.8633 13.3788 10.0002 13.3788Z" />
+                                <path
+                                    d="M15.3697 3.3418C15.0278 3.3418 14.6919 3.48021 14.4505 3.72272C14.2078 3.96405 14.0684 4.30003 14.0684 4.64309C14.0684 4.9851 14.208 5.32095 14.4505 5.56347C14.6918 5.8048 15.0278 5.94439 15.3697 5.94439C15.7127 5.94439 16.0475 5.8048 16.29 5.56347C16.5325 5.32095 16.671 4.98498 16.671 4.64309C16.671 4.30003 16.5325 3.96405 16.29 3.72272C16.0487 3.48021 15.7127 3.3418 15.3697 3.3418Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="columns-mob-edit columns-desk order-desk">
+                    <div class="footer-features">
+                        <div class="footer-row">
+                            <div class="columns-mob-edit columns-sm">
+                                <div class="footer-features-image" style="height: 43px;">
+                                    <img src="./images/cook.svg">
+                                </div>
+                                <span>Готовим вручную и с любовью</span>
+                            </div>
+                            <div class="columns-mob-edit columns-sm">
+                                <div class="footer-features-image" style="height: 43px;">
+                                    <img src="./images/fDelivery.svg">
+                                </div>
+                                <span>Бережная доставка</span>
+                            </div>
+                            <div class="columns-mob-edit columns-sm">
+                                <div class="footer-features-image" style="height: 43px;">
+                                    <img src="./images/fAlmond.svg">
+                                </div>
+                                <span>100% натуральные ингредиенты</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-info">
+                        <div class="footer-row">
+                            <div class="columns-info columns-info-sm">
+                                <div class="widget-text footer-copyright">
+                                    <div class="text-widget custom-html-widget">
+                                        <div class="copyright">
+                                            © 2024 Макароншоп<br>
+                                            ООО "Квантум", Санкт-Петербург<br>
+                                            <br>Создание сайта —
+                                            <a href="https://t.me/vladsrka" target="_blank" style="color:#292929"
+                                                rel="noopener">Vlad Soroka</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns-phone footer-mobile" style="text-align: right">
+                                <div class="widget-text footer-widget">
+                                    <div class="text-widget custom-html-widget">
+                                        <a href="tel:+375336530429" class="footer-phone">
+                                            +375 (33) 653 042 9
+                                        </a><br>
+                                        с 9:00 до 18:00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-mobile">
+                            <div class="contact-links">
+                                <a href="https://t.me/vladsrka" target="_blank">
+                                    <svg width="16" height="12" viewBox="0 0 16 12" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.9732 0.0468448L0.339879 5.1234C-0.134095 5.28784 -0.105381 5.89335 0.382518 6.02159L4.10099 6.99912L5.48873 10.9192C5.63369 11.3287 6.21657 11.4529 6.55399 11.1461L8.47653 9.39857L12.2487 11.8636C12.7104 12.1652 13.3678 11.9411 13.485 11.4421L15.9834 0.808462C16.1057 0.287594 15.5301 -0.14637 14.9732 0.0468448ZM13.1385 2.40672L6.34146 7.75766C6.27371 7.81101 6.23059 7.88483 6.22051 7.96485L5.95882 10.0358C5.95027 10.1034 5.8441 10.1123 5.82144 10.0474L4.74476 6.95885C4.69544 6.81745 4.75974 6.66424 4.90105 6.58623L12.9277 2.15443C13.1123 2.05243 13.3013 2.27865 13.1385 2.40672Z" />
+                                    </svg>
+                                </a>
+                                <a href="https://vk.com/vladsrka" target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.343 17.4535H12.3498C12.3498 17.4535 12.6539 17.4202 12.8092 17.2528C12.9521 17.0991 12.9475 16.8105 12.9475 16.8105C12.9475 16.8105 12.9278 15.4596 13.5548 15.2607C14.1729 15.0647 14.9666 16.5663 15.8078 17.1437C16.444 17.5807 16.9274 17.4849 16.9274 17.4849L19.1768 17.4535C19.1768 17.4535 20.3535 17.3811 19.7955 16.4559C19.7498 16.3802 19.4706 15.7715 18.1231 14.5207C16.7127 13.2116 16.9015 13.4234 18.6005 11.1589C19.6352 9.77983 20.0489 8.93789 19.9197 8.57728C19.7964 8.23383 19.0354 8.32461 19.0354 8.32461L16.5028 8.34039C16.5028 8.34039 16.315 8.31478 16.1758 8.39801C16.0397 8.47964 15.9521 8.66989 15.9521 8.66989C15.9521 8.66989 15.5513 9.73707 15.0167 10.6446C13.8889 12.5597 13.438 12.6608 13.2537 12.5419C12.8249 12.2647 12.9319 11.4285 12.9319 10.8344C12.9319 8.97859 13.2134 8.20479 12.3838 8.00448C12.1085 7.93794 11.9059 7.89404 11.2019 7.88695C10.2982 7.87757 9.53332 7.88969 9.10023 8.10189C8.81212 8.24298 8.58985 8.55739 8.72522 8.57546C8.89261 8.59786 9.27173 8.67767 9.47272 8.95138C9.73226 9.30443 9.72311 10.0974 9.72311 10.0974C9.72311 10.0974 9.8722 12.2821 9.37486 12.5535C9.03346 12.7396 8.56516 12.3596 7.55973 10.6222C7.04455 9.73226 6.65559 8.74855 6.65559 8.74855C6.65559 8.74855 6.58059 8.56471 6.44682 8.46638C6.28447 8.34725 6.05763 8.30929 6.05763 8.30929L3.65095 8.32507C3.65095 8.32507 3.28966 8.33513 3.15704 8.49222C3.03905 8.63194 3.14766 8.92097 3.14766 8.92097C3.14766 8.92097 5.03185 13.3291 7.16528 15.5506C9.1215 17.5873 11.343 17.4535 11.343 17.4535Z" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.instagram.com/vladsrka/" target="_blank">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.4806 0H5.51916C2.4759 0 0 2.47601 0 5.51928V14.4807C0 17.5241 2.4759 20 5.51916 20H14.4806C17.5241 20 20 17.524 20 14.4807V5.51928C20.0001 2.47601 17.5241 0 14.4806 0ZM18.2256 14.4807C18.2256 16.5456 16.5456 18.2255 14.4807 18.2255H5.51916C3.45435 18.2256 1.7745 16.5456 1.7745 14.4807V5.51928C1.7745 3.45447 3.45435 1.7745 5.51916 1.7745H14.4806C16.5455 1.7745 18.2255 3.45447 18.2255 5.51928V14.4807H18.2256Z" />
+                                        <path
+                                            d="M10.0002 4.84668C7.15849 4.84668 4.84668 7.15849 4.84668 10.0002C4.84668 12.8417 7.15849 15.1534 10.0002 15.1534C12.8419 15.1534 15.1537 12.8417 15.1537 10.0002C15.1537 7.15849 12.8419 4.84668 10.0002 4.84668ZM10.0002 13.3788C8.13707 13.3788 6.62118 11.8632 6.62118 10.0001C6.62118 8.13683 8.13695 6.62106 10.0002 6.62106C11.8634 6.62106 13.3792 8.13683 13.3792 10.0001C13.3792 11.8632 11.8633 13.3788 10.0002 13.3788Z" />
+                                        <path
+                                            d="M15.3697 3.3418C15.0278 3.3418 14.6919 3.48021 14.4505 3.72272C14.2078 3.96405 14.0684 4.30003 14.0684 4.64309C14.0684 4.9851 14.208 5.32095 14.4505 5.56347C14.6918 5.8048 15.0278 5.94439 15.3697 5.94439C15.7127 5.94439 16.0475 5.8048 16.29 5.56347C16.5325 5.32095 16.671 4.98498 16.671 4.64309C16.671 4.30003 16.5325 3.96405 16.29 3.72272C16.0487 3.48021 15.7127 3.3418 15.3697 3.3418Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./homePage.js"></script>
+</body>
+
+</html>
